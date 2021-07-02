@@ -1,0 +1,125 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Permission;
+
+class PermissionSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $permissions = [
+            'role-list',
+            'role-create',
+            'role-edit',
+            'role-delete',
+            'user-list',
+            'user-create',
+            'user-edit',
+            'user-delete',
+            'room-type-list',
+            'room-type-create',
+            'room-type-edit',
+            'room-type-delete',
+            'room-list',
+            'room-create',
+            'room-edit',
+            'room-delete',
+            'tariff-list',
+            'tariff-create',
+            'tariff-edit',
+            'tariff-delete',
+            'amenity-list',
+            'amenity-create',
+            'amenity-edit',
+            'amenity-delete',
+            'hall-list',
+            'hall-create',
+            'hall-edit',
+            'hall-delete',
+            'space-list',
+            'space-create',
+            'space-edit',
+            'space-delete',
+            'agent-list',
+            'agent-create',
+            'agent-edit',
+            'agent-delete',
+            'guest-list',
+            'guest-create',
+            'guest-edit',
+            'guest-delete',
+            'reservation-list',
+            'reservation-create',
+            'reservation-edit',
+            'reservation-delete',
+            'check-in-list',
+            'check-in-create',
+            'check-in-edit',
+            'check-in-delete',
+            'room-transfer-list',
+            'room-transfer-create',
+            'room-transfer-edit',
+            'room-transfer-delete',
+            'conference-list',
+            'conference-create',
+            'conference-edit',
+            'conference-delete',
+            'event-list',
+            'event-create',
+            'event-edit',
+            'event-delete',
+            'accounts-list',
+            'accounts-create',
+            'accounts-edit',
+            'accounts-delete',
+            'voucher-list',
+            'voucher-create',
+            'voucher-edit',
+            'voucher-delete',
+            'receipt-list',
+            'receipt-create',
+            'receipt-edit',
+            'receipt-delete',
+            'payment-list',
+            'payment-create',
+            'payment-edit',
+            'payment-delete',
+            'service-payment-list',
+            'service-payment-create',
+            'service-payment-edit',
+            'service-payment-delete',
+            'conference-payment-list',
+            'conference-payment-create',
+            'conference-payment-edit',
+            'conference-payment-delete',
+            'event-payment-list',
+            'event-payment-create',
+            'event-payment-edit',
+            'event-payment-delete',
+            'asset-list',
+            'asset-create',
+            'asset-edit',
+            'asset-delete',
+            'lb-list',
+            'lb-create',
+            'lb-edit',
+            'lb-delete',
+            'rs-bar',
+            'store-room',
+            'gym',
+            'housekeeping',
+            'reports',
+        ];
+
+        foreach ($permissions as $permission) {
+            Permission::create(['name' => $permission]);
+        }
+    }
+}
