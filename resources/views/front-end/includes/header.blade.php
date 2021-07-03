@@ -26,7 +26,7 @@
                 </div>
             </div>
             <!-- HEADER LOGO -->
-            <a class="logo-top img-responsive" href="#"><img src="images/logo-header.png" alt=""></a>
+            <a class="logo-top img-responsive" href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
             <!-- END / HEADER LOGO -->
         </div>
     </div>
@@ -36,7 +36,7 @@
         <div class="container">
             <!-- HEADER LOGO -->
             <div class="header_logo">
-                <a href="#"><img src="images/logo-header.png" alt=""></a>
+                <a href="#"><img width="100px" height="30px" src="images/wagyingo_logo.jpg" alt=""></a>
             </div>
             <!-- END / HEADER LOGO -->
             <!-- HEADER MENU -->

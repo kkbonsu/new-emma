@@ -20,7 +20,9 @@ class CreateBookingsTable extends Migration
             $table->date('checkout_date')->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('username')->nullable();
-            $table->string('room')->nullable();
+            $table->string('room_number')->nullable();
+            $table->string('room_type')->nullable();
+            $table->string('status')->nullable();
             $table->softDeletes('deleted_at', 0);
             $table->timestamps();
         });

@@ -48,7 +48,7 @@
                             </div>
                             <div class="form-group mr-sm-2">
                                 <select class="form-control" name="sortBy" value="">
-                                    @foreach (['room_number', 'status'] as $col)
+                                    @foreach (['room_number', 'room_type', 'status'] as $col)
                                         <option @if ($col == $sortBy)
                                             selected
                                         @endif value="{{ $col }}">{{ ucfirst($col) }}</option>
@@ -79,8 +79,9 @@
                             <tr>
                                 <th>Room Number</th>
                                 <th>Room Type</th>
-                                <th>Rate</th>
+                                <th>Price</th>
                                 <th>Max Occupancy</th>
+                                <th>Area</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -88,9 +89,10 @@
                         <tbody>
                             <tr>
                                 <td>#{{ $room->room_number }}</td>
-                                <td>{{ $room->type->name }}</td>
-                                <td>&#8373;{{ $room->type->price }}</td>
-                                <td>{{ $room->type->max_occupancy }}</td>
+                                <td>{{ $room->room_type }}</td>
+                                <td>&#8373;{{ $room->price }}</td>
+                                <td>{{ $room->max_occupancy }}</td>
+                                <td>{{ $room->area }} sq. m</td>
                                 <td>
                                     <a class="btn btn-icon btn-outline-info" title="Show Details" href="{{ route('rooms.show', $room->id) }}"><i class="feather icon-eye"></i></a>
                                     <a class="btn btn-icon btn-outline-warning" title="Edit Details" href="{{ route('rooms.edit', $room->id) }}"><i class="feather icon-edit"></i></a>
@@ -125,10 +127,13 @@
                     <div class="col-xs-6 col-sm-6 col-md-6">
                         <div class="form-group">
                             <strong>Room Type*:</strong>
-                            <select class="form-control" id="type_id" name="type_id">
-                                @foreach ($types as $type)
-                                    <option value="{{ $type->id }}">{{ $type->name }}</option>
-                                @endforeach
+                            <select class="form-control" id="room_type" name="room_type">
+                                <option value="Single Room">Single Room</option>
+                                <option value="Double Room">Double Room</option>
+                                <option value="Quad Room">Quad Room</option>
+                                <option value="Basement 2 in 2 Room">Basement 2 in 2 Room</option>
+                                <option value="Basement Double Room">Basement Double Room</option>
+                                <option value="Basement Quad Room">Basement Quad Room</option>
                             </select>
                         </div>
                     </div>
@@ -138,16 +143,30 @@
                             {!! Form::text('room_number', null, array('placeholder' => '','class' => 'form-control')) !!}
                         </div>
                     </div>
-                    {{-- <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="col-xs-4 col-sm-4 col-md-4">
                         <div class="form-group">
-                            <strong>Status*:</strong>
-                            <select class="form-control" id="status" name="status">
-                                <option value="Clean">Clean</option>
-                                <option value="Dirty">Dirty</option>
-                                <option value="Out of Service">Out of Service</option>
-                            </select>
+                            <strong>Max Occupancy:</strong>
+                            {!! Form::number('max_occupancy', null, array('placeholder' => '','class' => 'form-control')) !!}
                         </div>
-                    </div> --}}
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <strong>Price*:</strong>
+                            {!! Form::number('price', null, array('placeholder' => '','class' => 'form-control')) !!}
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <div class="form-group">
+                            <strong>Room Area (in square meters):</strong>
+                            {!! Form::number('area', null, array('placeholder' => '','class' => 'form-control')) !!}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <strong>Description:</strong>
+                            {!! Form::text('description', null, array('placeholder' => '','class' => 'form-control')) !!}
+                        </div>
+                    </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <button type="submit" class="btn btn-success">Create</button>
                     </div>

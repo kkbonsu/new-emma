@@ -306,14 +306,14 @@ img{
     color:#fff
 }
 .awe-btn.awe-btn-13{
-    border:2px solid #e1bd85;
-    background-color:#e1bd85;
+    border:4px solid #fff;
+    background-color: transparent;
     color:#fff
 }
 .awe-btn.awe-btn-13:hover{
-    border-color:#e1bd85;
+    border-color:#fff;
     background-color:#fff;
-    color:#e1bd85 !important
+    color:#b92f01 !important
 }
 .awe-btn.awe-btn-13.btn-order{
     height:54px;
@@ -1060,7 +1060,9 @@ blockquote p:after{
     background-image:url('../images/banner/img-10.jpg')
 }
 .bg-11{
-    background-image:url('../images/banner/img-11.jpg')
+    background-image:url('../images/login3.jpg');
+    background-position: center center;
+    background-size: cover;
 }
 .bg-12{
     background-image:url('../images/banner/img-12.jpg')

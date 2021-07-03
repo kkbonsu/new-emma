@@ -38,6 +38,7 @@ Route::resource('reservations', App\Http\Controllers\ReservationController::clas
 Route::resource('transfers', App\Http\Controllers\TransferController::class);
 Route::get('/findroom', [App\Http\Controllers\FindRoomController::class, 'index'])->name('findroom');
 Route::post('/findrooms', [App\Http\Controllers\FindRoomController::class, 'findroom'])->name('findrooms');
+Route::get('/book/{id}', [App\Http\Controllers\FindRoomController::class, 'book'])->name('book');
 
 // Webpage routes
 

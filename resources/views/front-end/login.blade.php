@@ -55,12 +55,12 @@
             <div class="container">
                 <div class="login-register">
                     <div class="text text-center">
-                        <h2>LOGIN</h2>
+                        <h2 style="color: #b92f01;">LOGIN</h2>
                         <p>Log into your account</p>
                         <form action="{{ route('login') }}" method="POST" class="account_form">
                             @csrf
                             <div class="field-form">
-                                <input type="email" class="field-text @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" id="email"  placeholder="Email address">
+                                <input style="border: 4px solid #ffffff" type="email" class="field-text @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" id="email"  placeholder="Email address">
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -68,7 +68,7 @@
                                 @enderror
                             </div>
                             <div class="field-form">
-                                <input id="password" type="password" class="field-text @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
+                                <input style="border: 4px solid #ffffff" id="password" type="password" class="field-text @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
                                 <span class="view-pass"><i class="lotus-icon-view"></i></span>
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -78,7 +78,7 @@
                             </div>
                             {{-- <span class="account-desc">I don’t have an account  -  <a href="#">Forgot Password</a></span> --}}
                             <div class="field-form field-submit">
-                                <button class="awe-btn awe-btn-13">Login</button>
+                                <button class="awe-btn awe-btn-13"><b>Login</b></button>
                             </div>
                         </form>
                     </div>

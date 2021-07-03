@@ -63,12 +63,12 @@
         <div id="slider-revolution">
             <ul>
                 <li data-transition="fade">
-                    <img src="images/home-3/slider-1.png" data-bgposition="left center" data-duration="14000"
+                    <img src="images/slider-4.jpg" data-bgposition="left center" data-duration="14000"
                          data-bgpositionend="right center" alt="">
 
                     <div class="tp-caption sft fadeout slider-caption-sub slider-caption-1" data-x="center" data-y="100"
-                         data-speed="700" data-start="1500" data-easing="easeOutBack">
-                        <img src="images/slider/hom1-slide1.png" alt="icons">
+                         data-speed="7000" data-start="1500" data-easing="easeOutBack">
+                        <img src="images/icon-slider-1.png" alt="icons">
                     </div>
 
                     <div class="tp-caption sft fadeout slider-caption-sub slider-caption-1" data-x="center" data-y="240"
@@ -85,7 +85,7 @@
                 </li>
 
                 <li data-transition="fade">
-                    <img src="images/home-3/slider-2.png" data-bgposition="left center" data-duration="14000"
+                    <img src="images/slider-3.jpg" data-bgposition="left center" data-duration="14000"
                          data-bgpositionend="right center" alt="">
 
                     <div class="tp-caption sft fadeout" data-x="center" data-y="195" data-speed="700" data-start="1300"
@@ -100,7 +100,7 @@
 
                     <div class="tp-caption sfb fadeout slider-caption slider-caption-3" data-x="center" data-y="260"
                          data-speed="700" data-easing="easeOutBack" data-start="2000">
-                        UNIQUE 60%
+                        UNIQUE 
                     </div>
 
                     <div class="tp-caption sfb fadeout slider-caption-sub slider-caption-sub-3" data-x="center"
@@ -109,14 +109,14 @@
 
                     <div class="tp-caption sfb fadeout slider-caption-sub slider-caption-sub-3" data-x="center"
                          data-y="395" data-easing="easeOutBack" data-speed="700" data-start="2400"><img
-                            src="images/icon-slider-2.png" alt=""></div>
+                            src="images/icon-slider-1.png" alt="">
+                    </div>
                 </li>
-
             </ul>
         </div>
-
     </section>
     <!-- END / BANNER SLIDER -->
+
     <!-- CHECK AVAILABILITY -->
     <section class="section-check-availability availability-style-2 clearfix">
         <div class="container">
@@ -124,10 +124,10 @@
                 <div class="ot-heading">
                     <h2 class="mb40">CHECK availability</h2>
                 </div>
-                <form id="ajax-form-search-room" class="mt40 mb50" action="search_step_2.php" method="POST">
+                {!! Form::open(array('route' => 'findrooms', 'method'=>'POST')) !!}
                     @csrf
-                    <div class="availability-form mb40">
-                        <select class="awe-select" name="adults">
+                    <div class="availability-form mb50">
+                        <select class="awe-select" name="room">
                             <option>Room</option>
                             <option>Single</option>
                             <option>Double</option>
@@ -138,16 +138,15 @@
                         </select>
                     </div>
                     <div class="vailability-submit">
-                        <button class="awe-btn awe-btn-13 pr30 pl30 f16 bold font-hind">Check Availability</button>
+                        <button type="submit" class="awe-btn awe-btn-13 pr30 pl30 f16 bold font-hind">Check Availability</button>
                     </div>
-                </form>
+                {!! Form::close() !!}
             </div>
         </div>
     </section>
     <!-- END / CHECK AVAILABILITY -->
 
     <!-- ACCOMMODATIONS -->
-
     <section class="ot-accomd-modations">
         <div class="container">
             <div class="content">
@@ -175,7 +174,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="#"><img class="img-responsive img-full" src="images/single1.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/single">Single Room</a></h2>
@@ -189,8 +188,8 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
-                                                             alt=""></a>
+                                            <a href="#"><img class="img-responsive img-full" src="images/double1.jpg"
+                                                             alt="" width="100px" height="100px"></a>
                                         </div>
                                         <h2 class="title"><a href="/double">Double Room</a></h2>
                                         <p class="price">

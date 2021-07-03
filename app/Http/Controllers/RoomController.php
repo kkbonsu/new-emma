@@ -34,11 +34,9 @@ class RoomController extends Controller
             $q = $request->query('q');
 
         $rooms = Room::search($q)->orderBy($sortBy, $orderBy)->paginate(10);
-        $types = Type::orderBy('id', 'asc')->get();
 
         return view('rooms.index')->with([
             'rooms' => $rooms,
-            'types' => $types,
             'orderBy' => $orderBy,
             'sortBy' => $sortBy,
             'q' => $q
@@ -69,13 +67,17 @@ class RoomController extends Controller
     {
         $this->validate($request, [
             'room_number' => 'required',
-            'type_id' => 'required'
         ]);
 
         // Create Room
         $room = new Room;
         $room->room_number = $request->input('room_number');
-        $room->type_id = $request->input('type_id');
+        $room->room_type = $request->input('room_type');
+        $room->max_occupancy = $request->input('max_occupancy');
+        $room->beds = $request->input('beds');
+        $room->area = $request->input('area');
+        $room->price = $request->input('price');
+        $room->description = $request->input('description');
         $room->save();
 
         return redirect('/rooms')->with('success', 'Room Created');
