@@ -154,13 +154,13 @@
                     <div class="room_item-2">
 
                         <div class="img">
-                            <a href="#"><img src="images/room/room2/img-1.jpg" alt=""></a>
+                            <a href="#"><img src="images/srwac.jpg" alt=""></a>
                         </div>
 
                         <div class="text">
                             <h2><a href="#">SINGLE ROOM without Air Conditioning</a></h2>
-                            <span class="price">Start form <span class="amout">$120</span> per day</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a <b>more-or-less</b> normal <b>distribution</b> of letters.</p>
+                            <span class="price">Priced At <span class="amout"><b>GH&#8373;7000.00</b></span> per academic year</span>
+                            <p>Self Contained Room that comes with a <b>TV </b> with a <b>DSTV subscription</b>, and a <b>fridge</b>. A bathroom and a balcony.</p>
                             <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
                         </div>
                     </div>
@@ -170,14 +170,13 @@
                     <div class="room_item-2 img-right">
 
                         <div class="img">
-                            <a href="#"><img src="images/room/room2/img-1.jpg" alt=""></a>
+                            <a href="#"><img src="images/wrwoac.jpg" alt=""></a>
                         </div>
 
                         <div class="text">
                             <h2><a href="#">Single Room with Air Conditioning</a></h2>
-                            <span class="price">Start form <span class="amout">$120</span> per day</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a <b>more-or-less</b> normal <b>distribution</b> of letters.</p>
-                            <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                            <span class="price">Priced at <span class="amout"><b>GH&#8373;8000.00</b></span> per academic year</span>
+                            <p>Self Contained Room that comes with a <b>TV </b> with a <b>DSTV subscription</b>, <b>Air Conditioner</b> and a <b>fridge</b>A bathroom and a balcony.</p>                          <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
                         </div>
                     </div>
                     <!-- ITEM -->

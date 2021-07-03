@@ -25,7 +25,7 @@ class FindRoomController extends Controller
                 ->where('checkin_date', '=', $time_to)
                 ->where('checkout_date', '=', $time_from)
                 ->where('room_type', '=', $room)
-                ->select('room_type');
+                ->select('room_id');
                 })->get();
         } else {
             $rooms = null;

@@ -148,30 +148,42 @@
         <section class="section-room bg-white">
             <div class="container">
 
-                <div class="room-wrap-2">
+                <div class="room-wrap-5">
+                    <div class="row">
+                        
                     @foreach ($rooms as $room)
-                    <!-- ITEM -->
-                    <div class="room_item-2">
+                        <!-- ITEM -->
+                        <div class="col-xs-3">
+                            <div class="room_item-5" data-background='images/room/grid2/img-1.jpg'>
 
-                        <div class="img">
-                            <a href="#"><img src="images/room/room2/img-1.jpg" alt=""></a>
-                        </div>
+                                <div class="img">
+                                    <a href="#"><img src="images/room/grid2/img-1.jpg" alt=""></a>
+                                </div>
 
-                        <div class="text">
-                            <h2><a href="#">#{{ $room->room_number }} ({{ $room->room_type }})</a></h2>
-                            <span class="price"><span class="amout">GH&#8373;{{ $room->price }}</span> per year</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a <b>more-or-less</b> normal <b>distribution</b> of letters.</p>
-                            <a href="{{ route('book', $room->id) }}" class="awe-btn awe-btn-13">Book Room</a>
+                                <div class="room_item-forward">
+                                    <h2><a href="#">#{{ $room->room_number }} ({{ $room->room_type }})</a></h2>
+                                    <span class="price">GH&#8373;{{ $room->price }}</span>
+                                </div>
+
+                                <div class="room_item-back">
+                                    <h3>#{{ $room->room_number }} ({{ $room->room_type }})</h3>
+                                    <span class="price">GH&#8373;{{ $room->price }}</span>
+                                    <p>Lorem Ipsum is simply dummy text of the <b>printing</b> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                    <a href="{{ route('book', $room->id) }}" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
-                    <!-- ITEM -->
+                        <!-- END / ITEM -->
                     @endforeach
+                        
+                    </div>
                 </div>
                 
             </div>
         </section>
         <!-- END / ROOM -->
-        
+
         <!-- FOOTER -->
         <footer id="footer">
 

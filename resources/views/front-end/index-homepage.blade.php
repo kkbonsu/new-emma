@@ -63,7 +63,7 @@
         <div id="slider-revolution">
             <ul>
                 <li data-transition="fade">
-                    <img src="images/slider-4.jpg" data-bgposition="left center" data-duration="14000"
+                    <img src="images/slider-5.jpg" transpa data-bgposition="left center" data-duration="14000"
                          data-bgpositionend="right center" alt="">
 
                     <div class="tp-caption sft fadeout slider-caption-sub slider-caption-1" data-x="center" data-y="100"
@@ -72,16 +72,16 @@
                     </div>
 
                     <div class="tp-caption sft fadeout slider-caption-sub slider-caption-1" data-x="center" data-y="240"
-                         data-speed="700" data-start="1500" data-easing="easeOutBack">
-                        WELCOME TO
+                         data-speed="700" data-start="1500" data-easing="easeOutBack" style="color:#fff">
+                         WELCOME TO
                     </div>
 
                     <div class="tp-caption sfb fadeout slider-caption slider-caption-sub-1" data-x="center" data-y="280"
-                         data-speed="700" data-easing="easeOutBack" data-start="2000">WAGYINGO HOSTEL
+                         data-speed="700" data-easing="easeOutBack" data-start="2000" style="color:#fff"><b>WAGYINGO HOSTEL</b>
                     </div>
 
                     <a href="#" class="tp-caption sfb fadeout awe-btn awe-btn-12 awe-btn-slider" data-x="center"
-                       data-y="380" data-easing="easeOutBack" data-speed="700" data-start="2200">VIEW NOW</a>
+                       data-y="380" data-easing="easeOutBack" data-speed="700" data-start="2200" style="color: white black">VIEW NOW</a>
                 </li>
 
                 <li data-transition="fade">
@@ -94,17 +94,17 @@
                     </div>
 
                     <div class="tp-caption sft fadeout slider-caption-sub slider-caption-sub-3" data-x="center"
-                         data-y="220" data-speed="700" data-start="1500" data-easing="easeOutBack">
+                         data-y="220" data-speed="700" data-start="1500" data-easing="easeOutBack" style="color: black">
                         SERVICE IS
                     </div>
 
                     <div class="tp-caption sfb fadeout slider-caption slider-caption-3" data-x="center" data-y="260"
-                         data-speed="700" data-easing="easeOutBack" data-start="2000">
+                         data-speed="700" data-easing="easeOutBack" data-start="2000" style="color: black">
                         UNIQUE 
                     </div>
 
                     <div class="tp-caption sfb fadeout slider-caption-sub slider-caption-sub-3" data-x="center"
-                         data-y="365" data-easing="easeOutBack" data-speed="700" data-start="2200">JUST LIKE YOU
+                         data-y="365" data-easing="easeOutBack" data-speed="700" data-start="2200" style="color: black">JUST LIKE YOU
                     </div>
 
                     <div class="tp-caption sfb fadeout slider-caption-sub slider-caption-sub-3" data-x="center"
@@ -129,12 +129,12 @@
                     <div class="availability-form mb50">
                         <select class="awe-select" name="room">
                             <option>Room</option>
-                            <option>Single</option>
-                            <option>Double</option>
-                            <option>Quad</option>
-                            <option>Basement 2 in 2</option>
-                            <option>Basement Double</option>
-                            <option>Basement Quad</option>
+                            <option value="Single">Single</option>
+                            <option value="Double">Double</option>
+                            <option value="Quad">Quad</option>
+                            <option value="Basement 2 in 2">Basement 2 in 2</option>
+                            <option value="Basement Double">Basement Double</option>
+                            <option value="Basement Quad">Basement Quad</option>
                         </select>
                     </div>
                     <div class="vailability-submit">
@@ -174,7 +174,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/single1.jpg"
+                                            <a href="/single"><img class="img-responsive img-full" src="images/Rooms/single.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/single">Single Room</a></h2>
@@ -188,7 +188,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/double1.jpg"
+                                            <a href="/double"><img class="img-responsive img-full" src="images/Rooms/double.jpg"
                                                              alt="" width="100px" height="100px"></a>
                                         </div>
                                         <h2 class="title"><a href="/double">Double Room</a></h2>
@@ -202,7 +202,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="/quad"><img class="img-responsive img-full" src="images/Rooms/quad.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/quad">Quad Room</a></h2>
@@ -216,7 +216,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="/basement2in2"><img class="img-responsive img-full" src="images/Rooms/basement2.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/basement2in2">Basement 2 in 2</a></h2>
@@ -230,7 +230,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="/basementdouble"><img class="img-responsive img-full" src="images/Rooms/bdouble.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/basementdouble">Basement Double</a></h2>
@@ -244,7 +244,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="/basementquad"><img class="img-responsive img-full" src="images/Rooms/basement_quad.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/basementquad">Basement Quad</a></h2>
@@ -261,7 +261,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="/single"><img class="img-responsive img-full" src="images/room/img-1.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/single">Single Room</a></h2>
@@ -275,7 +275,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="/double"><img class="img-responsive img-full" src="images/room/img-1.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/double">Double Room</a></h2>
@@ -289,7 +289,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="/quad"><img class="img-responsive img-full" src="images/room/img-1.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/quad">Quad Room</a></h2>
@@ -303,7 +303,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="/basement2in2"><img class="img-responsive img-full" src="images/room/img-1.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/basement2in2">Basement 2 in 2</a></h2>
@@ -317,7 +317,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="/basementdouble"><img class="img-responsive img-full" src="images/room/img-1.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/basementdouble">Basement Double</a></h2>
@@ -331,7 +331,7 @@
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="item room-item text-center accomd-modations-room_1">
                                         <div class="img">
-                                            <a href="#"><img class="img-responsive img-full" src="images/room/img-1.jpg"
+                                            <a href="/basementquad"><img class="img-responsive img-full" src="images/room/img-1.jpg"
                                                              alt=""></a>
                                         </div>
                                         <h2 class="title"><a href="/basementquad">Basement Quad</a></h2>
@@ -359,7 +359,7 @@
                 <div class="row">
                     <div class="col col-xs-12 col-lg-6 col-lg-offset-3">
                         <div class="ot-heading mb40 row-20 text-center">
-                            <h2>ABOUT LOTUS HOTEL</h2>
+                            <h2>ABOUT WAGYINGO HOSTEL</h2>
                             <p class="sub pr10 pl10">
                                 It is a long established fact that a reader will be distracted by the readable content
                                 of a page when looking at its layout
@@ -369,33 +369,10 @@
                 </div>
                 <div class="img-hover-box mb40">
                     <div class="img">
-                        <img class="img-responsive" src="images/home-3/about-hill.png" alt="">
+                        <img class="img-responsive" src="images/about.jpg" alt="">
                     </div>
                 </div>
-                <div class="text-center mt40 mb30 featured">
-                    <p class="font-hind f-500 f20">Brent Conrad talks with everyone from, frequent travelers to the busy
-                        family that can
-                        only get away for vacation every couple of years. </p>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                        <div class="details">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12">
-                                    <p class="font-hind f14 pr15">
-                                        The cards are being handed out by quarantine officials at Chicago,
-                                        O’Hare International Airport; Los Angeles; old York City, JFK International
-                                        Airport; Newark; & San Francisco. These airports are the only U.S.
-                                        airports receiving direct flights from Hong Kong. No U.S. airports
-                                        receive direct flights from Hanoi or the Guangdong Province. CDC officials
-                                        expect to expand the distribution of
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <a href="!#" class="awe-btn awe-btn-default mt30 mb30 font-hind f12 bold btn-medium"
-                                   target="_blank">Read more</a>
-                            </div>
+               
                         </div>
                     </div>
                 </div>
@@ -422,28 +399,28 @@
                      data-nav="true"
                      data-pagination="false">
                     <div class="item text-center">
-                        <img class="img-responsive mb10" src="images/home-3/icon/icon-11.png" alt="icon">
+                        <img class="img-responsive mb10" src="images/wifi_icon.png" alt="icon">
                         <span class="font-hind f-500">Free Wifi</span>
                     </div>
                     <div class="item text-center">
-                        <img class="img-responsive mb10" src="images/home-3/icon/icon-11.png" alt="icon">
+                        <img class="img-responsive mb10" src="images/carp.png" alt="icon">
                         <span class="font-hind f-500">Car Packing</span>
                     </div>
                     <div class="item text-center">
-                        <img class="img-responsive mb10" src="images/home-3/icon/icon-11.png" alt="icon">
+                        <img class="img-responsive mb10" src="images/studyr.png" alt="icon">
                         <span class="font-hind f-500">Study Room</span>
                     </div>
                     <div class="item text-center">
-                        <img class="img-responsive mb10" src="images/home-3/icon/icon-11.png" alt="icon">
+                        <img class="img-responsive mb10" src="images/aircon.png" alt="icon">
                         <span class="font-hind f-500">Air Conditioning</span>
                     </div>
                     <div class="item text-center">
-                        <img class="img-responsive mb10" src="images/home-3/icon/icon-11.png" alt="icon">
+                        <img class="img-responsive mb10" src="images/dstv.jpg" alt="icon">
                         <span class="font-hind f-500">Satelitte TV</span>
                     </div>
                     <div class="item text-center">
-                        <img class="img-responsive mb10" src="images/home-3/icon/icon-11.png" alt="icon">
-                        <span class="font-hind f-500">Laundry Service</span>
+                        <img class="img-responsive mb10" src="images/scam.png" alt="icon">
+                        <span class="font-hind f-500">Security Cam</span>
                     </div>
                 </div>
             </div>
