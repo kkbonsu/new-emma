@@ -77,8 +77,7 @@
                     <table id="user-list-table" class="table nowrap">
                         <thead>
                             <tr>
-                                <th>Room Number</th>
-                                <th>Room Type</th>
+                                <th>Room Name</th>
                                 <th>Price</th>
                                 <th>Max Occupancy</th>
                                 <th>Area</th>
@@ -88,8 +87,7 @@
                         @foreach ($rooms as $room)
                         <tbody>
                             <tr>
-                                <td>#{{ $room->room_number }}</td>
-                                <td>{{ $room->room_type }}</td>
+                                <td>#{{ $room->room_name }}</td>
                                 <td>&#8373;{{ $room->price }}</td>
                                 <td>{{ $room->max_occupancy }}</td>
                                 <td>{{ $room->area }} sq. m</td>
@@ -124,23 +122,10 @@
 
                 {!! Form::open(array('route' => 'rooms.store','method'=>'POST')) !!}
                 <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <strong>Room Type*:</strong>
-                            <select class="form-control" id="room_type" name="room_type">
-                                <option value="Single Room">Single Room</option>
-                                <option value="Double Room">Double Room</option>
-                                <option value="Quad Room">Quad Room</option>
-                                <option value="Basement 2 in 2 Room">Basement 2 in 2 Room</option>
-                                <option value="Basement Double Room">Basement Double Room</option>
-                                <option value="Basement Quad Room">Basement Quad Room</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <strong>Room Number*:</strong>
-                            {!! Form::text('room_number', null, array('placeholder' => '','class' => 'form-control')) !!}
+                            <strong>Room Name*:</strong>
+                            {!! Form::text('room_name', null, array('placeholder' => '','class' => 'form-control')) !!}
                         </div>
                     </div>
                     <div class="col-xs-4 col-sm-4 col-md-4">

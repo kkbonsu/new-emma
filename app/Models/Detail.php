@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Booking extends Model
+class Detail extends Model
 {
     use HasFactory;
     
     // Table Name
     
-    protected $table = 'bookings';
+    protected $table = 'details';
     // Primary Key
     public $primaryKey = 'id';
     // Timestamps
@@ -26,17 +26,5 @@ class Booking extends Model
     public function user()
     {
         return $this->belongsTo('App\Models\User', 'user_id');
-    }
-    
-    public function room()
-    {
-        return $this->belongsTo('App\Models\Room', 'room_id');
-    }
-
-    public function scopeSearch($query, $q)
-    {
-        if ($q == null) return $query;
-        return $query
-                ->where('booking_code', 'LIKE', "%{$q}%");
     }
 }

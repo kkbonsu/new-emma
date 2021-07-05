@@ -85,7 +85,7 @@
                 <div class="container">
                     <!-- HEADER LOGO -->
                     <div class="header_logo">
-                        <a href="#"><img src="images/logo-header.png" alt=""></a>
+                        <a href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
                     </div>
                     <!-- END / HEADER LOGO -->
                     
@@ -182,38 +182,6 @@
                     </div>
                     <!-- ITEM -->
 
-                    <!-- ITEM -->
-                    {{-- <div class="room_item-2">
-
-                        <div class="img">
-                            <a href="#"><img src="images/room/room2/img-1.jpg" alt=""></a>
-                        </div>
-
-                        <div class="text">
-                            <h2><a href="#">COUPLE ROOM</a></h2>
-                            <span class="price">Start form <span class="amout">$120</span> per day</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a <b>more-or-less</b> normal <b>distribution</b> of letters.</p>
-                            <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
-                        </div>
-                    </div> --}}
-                    <!-- ITEM -->
-
-                    <!-- ITEM -->
-                    {{-- <div class="room_item-2 img-right">
-
-                        <div class="img">
-                            <a href="#"><img src="images/room/room2/img-1.jpg" alt=""></a>
-                        </div>
-
-                        <div class="text">
-                            <h2><a href="#">STANDARD ROOM</a></h2>
-                            <span class="price">Start form <span class="amout">$120</span> per day</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a <b>more-or-less</b> normal <b>distribution</b> of letters.</p>
-                            <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
-                        </div>
-                    </div> --}}
-                    <!-- ITEM -->
-
                 </div>
                 
             </div>
@@ -253,7 +221,7 @@
                             <div class="widget widget_logo">
                                 <div class="widget-logo">
                                     <div class="img">
-                                        <a href="#"><img src="images/logo-footer.png" alt=""></a>
+                                        <a href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
                                     </div>
                                     <div class="text">
                                         <p><i class="lotus-icon-location"></i> 225 Beach Street, Australian</p>
@@ -268,7 +236,6 @@
                             <div class="widget">
                                 <h4 class="widget-title">Page site</h4>
                                 <ul>
-                                    <li><a href="#">Guest Book</a></li>
                                     <li><a href="#">Gallery</a></li>
                                     <li><a href="#">Restaurant</a></li>
                                     <li><a href="#">Event</a></li>

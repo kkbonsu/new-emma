@@ -28,10 +28,15 @@ class Room extends Model
         return $this->belongsTo('App\Models\Type', 'type_id');
     }
 
+    public function booking()
+    {
+        return $this->hasMany(Booking::class, 'room_id');
+    }
+
     public function scopeSearch($query, $q)
     {
         if ($q == null) return $query;
         return $query
-                ->where('room_number', 'LIKE', "%{$q}%");
+                ->where('room_name', 'LIKE', "%{$q}%");
     }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!-- TITLE -->
-    <title>Basement Double Rooms at Wagyingo Hostel</title>
+    <title>Room Booking Wagyingo Hostel</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
@@ -14,17 +14,17 @@
     <link href='http://fonts.googleapis.com/css?family=Hind:400,300,500,600%7cMontserrat:400,700' rel='stylesheet' type='text/css'>
 
     <!-- CSS LIBRARY -->
-    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/lib/font-lotusicon.css">
-    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/lib/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/lib/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="css/lib/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="css/lib/settings.css">
-    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/font-lotusicon.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/settings.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap-select.min.css">
 
     <!-- MAIN STYLE -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -83,9 +83,10 @@
             <div class="header_content" id="header_content">
 
                 <div class="container">
+
                     <!-- HEADER LOGO -->
                     <div class="header_logo">
-                        <a href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
+                        <a href="#"><img src="/images/wagyingo_logo.jpg" alt=""></a>
                     </div>
                     <!-- END / HEADER LOGO -->
                     
@@ -93,12 +94,12 @@
                     <nav class="header_menu">
                         <ul class="menu">
                             <li>
-                                <a href="/index-homepage">Home</a>
+                                <a href="/index-homepage">Home </a>
                             </li>
                             <li>
                                 <a href="/about">About</a>
                             </li>
-                            <li class="current-menu-item">
+                            <li>
                                 <a href="#">Rooms <span class="fa fa-caret-down"></span></a>
                                 <ul class="sub-menu">
                                     <li><a href="/single">Single</a></li>
@@ -112,7 +113,9 @@
                             <li>
                                 <a href="/gallery">Gallery</a>
                             </li>
-                            <li><a href="/contact">Contact</a></li>
+                            <li>
+                                <a href="/contact">Contact</a>
+                            </li>
                         </ul>
                     </nav>
                     <!-- END / HEADER MENU -->
@@ -129,96 +132,88 @@
 
         </header>
         <!-- END / HEADER -->
-
+        
         <!-- SUB BANNER -->
         <section class="section-sub-banner bg-9">
-            <div class="awe-overlay"></div>
             <div class="sub-banner">
                 <div class="container">
                     <div class="text text-center">
-                        <h2>BASEMENT DOUBLE ROOM</h2>
-                        {{-- <p>Lorem Ipsum is simply dummy text</p> --}}
+                        <h2>BOOKING FORM</h2>
+                        <p>Fill the form below to book your room</p>
                     </div>
                 </div>
+
             </div>
+
         </section>
         <!-- END / SUB BANNER -->
 
-        <!-- ROOM -->
-        <section class="section-room bg-white">
+        <!-- CONTACT -->
+        <section class="section-contact">
             <div class="container">
-
-                <div class="room-wrap-2">
-
-                    <!-- ITEM -->
-                    <div class="room_item-2">
-
-                        <div class="img">
-                            <a href="#"><img src="images/room/room2/img-1.jpg" alt=""></a>
-                        </div>
-
-                        <div class="text">
-                            <h2><a href="#">BASEMENT DOUBLE ROOM without Air Conditioning</a></h2>
-                            <span class="price">Start form <span class="amout">$120</span> per day</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a <b>more-or-less</b> normal <b>distribution</b> of letters.</p>
-                            <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
-                        </div>
+                <div class="contact">
+                    @section('content')
+                    @if ($message = Session::get('success'))
+                    <div class="alert alert-success">
+                        <p>{{ $message }}</p>
                     </div>
-                    <!-- ITEM -->
-
-                    <!-- ITEM -->
-                    <div class="room_item-2 img-right">
-
-                        <div class="img">
-                            <a href="#"><img src="images/room/room2/img-1.jpg" alt=""></a>
+                    @endif
+                    <div class="row">
+                        <div class="col-md-12 col-lg-11 col-lg-offset-1">
+                            <div class="contact-form">
+                                {!! Form::open(array('route' => 'bookings.store', 'method'=>'POST')) !!}
+                                    @csrf
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="">Your Full Name</label>
+                                            <input type="text" class="field-text"  name="name" placeholder="Name" value="{{ Auth::user()->name }}" disabled="true">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label for="">Your Current Year</label>
+                                            <input type="text" class="field-text" name="year" placeholder="Year" value="{{ Auth::user()->detail->level }}" disabled="true">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <label for="">Your Programme of Study</label>
+                                            <input type="text" class="field-text" name="programme" placeholder="Programme" value="{{ Auth::user()->detail->programme }}" disabled="true">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <label for="">Your Selected Room</label>
+                                            <input type="text" class="field-text" name="room_name" placeholder="" value="{{ $room->room_name }}">
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <input type="number" class="field-text" name="room_id" placeholder="" value="{{ $room->id }}" hidden>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        {{-- <div class="col-sm-12">
+                                            <label for="">Suggestion Box</label>
+                                            <textarea cols="30" rows="5" name="message"  class="field-textarea" placeholder="Enter any suggestions you would like the hostel management to implement"></textarea>
+                                        </div> --}}
+                                        <div class="col-sm-6">
+                                            <button type="submit" class="awe-btn awe-btn-13">SEND</button>
+                                        </div>
+                                    </div>
+                                    <div id="contact-content"></div>
+                                {!! Form::close() !!}
+                            </div>
                         </div>
 
-                        <div class="text">
-                            <h2><a href="#">BASEMENT DOUBLE ROOM with Air Conditioning</a></h2>
-                            <span class="price">Start form <span class="amout">$120</span> per day</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a <b>more-or-less</b> normal <b>distribution</b> of letters.</p>
-                            <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
-                        </div>
-                    </div>
-                    <!-- ITEM -->
-
-                    <!-- ITEM -->
-                    {{-- <div class="room_item-2">
-
-                        <div class="img">
-                            <a href="#"><img src="images/room/room2/img-1.jpg" alt=""></a>
-                        </div>
-
-                        <div class="text">
-                            <h2><a href="#">COUPLE ROOM</a></h2>
-                            <span class="price">Start form <span class="amout">$120</span> per day</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a <b>more-or-less</b> normal <b>distribution</b> of letters.</p>
-                            <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
-                        </div>
-                    </div> --}}
-                    <!-- ITEM -->
-
-                    <!-- ITEM -->
-                    {{-- <div class="room_item-2 img-right">
-
-                        <div class="img">
-                            <a href="#"><img src="images/room/room2/img-1.jpg" alt=""></a>
-                        </div>
-
-                        <div class="text">
-                            <h2><a href="#">STANDARD ROOM</a></h2>
-                            <span class="price">Start form <span class="amout">$120</span> per day</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a <b>more-or-less</b> normal <b>distribution</b> of letters.</p>
-                            <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
-                        </div>
-                    </div> --}}
-                    <!-- ITEM -->
-
+                    </div>  
                 </div>
-                
             </div>
         </section>
-        <!-- END / ROOM -->
+        <!-- END / CONTACT -->
+
+        <!-- MAP -->
+        {{-- <section class="section-map">
+            <h1 class="element-invisible">Map</h1>
+            <div class="contact-map">
+                <div id="map" data-locations="39.0926986,-94.5747324--39.0912284,-94.5743515" data-center="39.0926986,-94.5747324"></div>
+            </div>
+        </section> --}}
+        <!-- END / MAP -->
         
         <!-- FOOTER -->
         <footer id="footer">
@@ -253,7 +248,7 @@
                             <div class="widget widget_logo">
                                 <div class="widget-logo">
                                     <div class="img">
-                                        <a href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
+                                        <a href="#"><img src="/images/logo-footer.png" alt=""></a>
                                     </div>
                                     <div class="text">
                                         <p><i class="lotus-icon-location"></i> 225 Beach Street, Australian</p>
@@ -307,21 +302,26 @@
 
 
     <!-- LOAD JQUERY -->
-    <script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/lib/bootstrap-select.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/lib/bootstrap-select.js"></script>
+    <script src="//maps.google.com/maps/api/js?key=AIzaSyAb2lfsiytHD7rMhBaAvJz2CKhk05uiIuE"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
-    <script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="js/lib/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.appear.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.countTo.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/lib/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="/js/lib/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="/js/lib/owl.carousel.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.countTo.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="/js/lib/SmoothScroll.js"></script>
+    <!-- validate -->
+    <script type="text/javascript" src="/js/lib/jquery.form.min.js"></script>
+    <script type="text/javascript" src="/js/lib/jquery.validate.min.js"></script>
+    <!-- Custom jQuery -->
+    <script type="text/javascript" src="/js/scripts.js"></script>
 </body>
 </html>

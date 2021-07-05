@@ -18,13 +18,12 @@
         <div class="row align-items-center">
             <div class="col-md-12">
                 <div class="page-header-title">
-                    <h5 class="m-b-10">Rooms</h5>
+                    <h5 class="m-b-10">Users</h5>
                 </div>
                 <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/home"><i class="fas fa-hotel"></i></a></li>
-                    <li class="breadcrumb-item"><a href="#">Room Configurations</a></li>
-                    <li class="breadcrumb-item"><a href="/rooms">Rooms</a></li>
-                    <li class="breadcrumb-item"><a href="#">Edit Room Details</a></li>
+                    <li class="breadcrumb-item"><a href="/users">Users</a></li>
+                    <li class="breadcrumb-item"><a href="#">Edit User</a></li>
                 </ul>
             </div>
         </div>
@@ -40,39 +39,39 @@
                     <div class="col-sm-6">
                     </div>
                     <div class="col-sm-6 text-right">
-                        <a class="btn btn-secondary mb-3 btn-sm" href="/rooms"><i class="fas fa-angle-left"></i> Back</a>
+                        <a class="btn btn-secondary mb-3 btn-sm" href="/users"><i class="fas fa-angle-left"></i> Back</a>
                     </div>
                 </div>
-                {!! Form::model($room, ['method' => 'PATCH', 'route' => ['rooms.update', $room->id]]) !!}
+                {!! Form::model($user, ['method' => 'PATCH','route' => ['users.update', $user->id]]) !!}
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <strong>Room Name*:</strong>
-                            {!! Form::text('room_name', null, array('placeholder' => '','class' => 'form-control')) !!}
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4">
-                        <div class="form-group">
-                            <strong>Max Occupancy:</strong>
-                            {!! Form::number('max_occupancy', null, array('placeholder' => '','class' => 'form-control')) !!}
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4">
-                        <div class="form-group">
-                            <strong>Price*:</strong>
-                            {!! Form::number('price', null, array('placeholder' => '','class' => 'form-control')) !!}
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4">
-                        <div class="form-group">
-                            <strong>Room Area (in square meters):</strong>
-                            {!! Form::number('area', null, array('placeholder' => '','class' => 'form-control')) !!}
+                            <strong>Name:</strong>
+                            {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control')) !!}
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
-                            <strong>Description:</strong>
-                            {!! Form::text('description', null, array('placeholder' => '','class' => 'form-control')) !!}
+                            <strong>Email:</strong>
+                            {!! Form::text('email', null, array('placeholder' => 'Email','class' => 'form-control')) !!}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <strong>Password:</strong>
+                            {!! Form::password('password', array('placeholder' => 'Password','class' => 'form-control')) !!}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <strong>Confirm Password:</strong>
+                            {!! Form::password('confirm-password', array('placeholder' => 'Confirm Password','class' => 'form-control')) !!}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <strong>Role:</strong>
+                            {!! Form::select('roles[]', $roles,$userRole, array('class' => 'form-control','multiple')) !!}
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">

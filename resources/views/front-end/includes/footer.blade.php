@@ -10,7 +10,7 @@
                             <div class="widget widget_logo clearfix">
                                 <div class="widget-logo text-center">
                                     <div class="img">
-                                        <a href="#"><img class="img-center" src="images/home-3/footer/logo-footer.png" alt=""></a>
+                                        <a href="#"><img class="img-center" src="images/wagyingo_logo.jpg" alt=""></a>
                                     </div>
                                 </div>
                             </div>

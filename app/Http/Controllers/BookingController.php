@@ -7,6 +7,7 @@ use App\Models\Booking;
 use App\Models\Room;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Redirect;
 
 class BookingController extends Controller
 {
@@ -59,13 +60,13 @@ class BookingController extends Controller
         // Create Booking
         $booking = new Booking;
         $booking->booking_code = random_int(1000, 9999);
-        $booking->checkin_date = Carbon::today()->toDateString();
-        // $booking->checkout_date = ;
         $booking->user_id = Auth::id();
         $booking->username = Auth::user()->name;
+        $booking->room_name = $request->input('room_name');
+        $booking->room_id = $request->input('room_id');
         $booking->save();
 
-        return redirect('/bookings')->with('success', 'Booking Created');
+        return Redirect::back()->with('success', 'Your Booking Has Been Created');
     }
 
     /**

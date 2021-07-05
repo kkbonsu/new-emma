@@ -46,4 +46,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Models\Booking');
     }
+
+    public function detail()
+    {
+        return $this->hasOne('App\Models\Detail');
+    }
 }

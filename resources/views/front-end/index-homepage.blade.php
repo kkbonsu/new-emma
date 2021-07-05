@@ -128,7 +128,7 @@
                     @csrf
                     <div class="availability-form mb50">
                         <select class="awe-select" name="room">
-                            <option>Room</option>
+                            <option disabled="true">Room</option>
                             <option value="Single">Single</option>
                             <option value="Double">Double</option>
                             <option value="Quad">Quad</option>
@@ -141,6 +141,16 @@
                         <button type="submit" class="awe-btn awe-btn-13 pr30 pl30 f16 bold font-hind">Check Availability</button>
                     </div>
                 {!! Form::close() !!}
+                {{-- <form action="{{ route('findrooms') }}" class="form-inline">
+                    <div class="availability-form mb50">
+                        <div class="form-group mr-sm-2">
+                            <input class="form-control" type="search" name="q" value="" placeholder="Search...">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="awe-btn awe-btn-13 pr30 pl30 f16 bold font-hind">Search</button>
+                        </div>
+                    </div>
+                </form> --}}
             </div>
         </div>
     </section>

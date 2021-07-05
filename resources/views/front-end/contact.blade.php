@@ -86,7 +86,7 @@
 
                     <!-- HEADER LOGO -->
                     <div class="header_logo">
-                        <a href="#"><img src="images/logo-header.png" alt=""></a>
+                        <a href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
                     </div>
                     <!-- END / HEADER LOGO -->
                     

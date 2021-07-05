@@ -11,6 +11,7 @@
                         <ul class="pcoded-submenu">
                             <li><a href="/roles">Roles</a></li>
                             <li><a href="/users">Users</a></li>
+                            <li><a href="/details">User Details</a></li>
                         </ul>
                     </li>
                 <li class="nav-item pcoded-menu-caption">

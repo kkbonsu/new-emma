@@ -34,36 +34,30 @@
                     </div>
                 </div>
                 <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="form-group">
-                        <strong>Room Number:</strong>
-                        #{{ $room->room_number }}
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <strong>Room Name:</strong>
+                            #{{ $room->room_name }}
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="form-group">
-                        <strong>Number of beds:</strong>
-                        {{ $room->type->beds }}
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <strong>Area:</strong>
+                            {{ $room->type->area }} sq.m.
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="form-group">
-                        <strong>Area:</strong>
-                        {{ $room->type->area }} sq.m.
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <strong>Price:</strong>
+                            GH&#8373;{{ $room->price }}
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="form-group">
-                        <strong>Price:</strong>
-                        GH&#8373;{{ $room->type->price }}
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <strong>Max Occupancy:</strong>
+                            {{ $room->max_occupancy }}
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="form-group">
-                        <strong>Max Occupancy:</strong>
-                        {{ $room->type->max_occupancy }}
-                    </div>
-                </div>
                 </div>
             </div>
         </div>

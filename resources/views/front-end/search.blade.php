@@ -85,7 +85,7 @@
                 <div class="container">
                     <!-- HEADER LOGO -->
                     <div class="header_logo">
-                        <a href="#"><img src="images/logo-header.png" alt=""></a>
+                        <a href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
                     </div>
                     <!-- END / HEADER LOGO -->
                     
@@ -161,15 +161,13 @@
                                 </div>
 
                                 <div class="room_item-forward">
-                                    <h2><a href="#">#{{ $room->room_number }} ({{ $room->room_type }})</a></h2>
+                                    <h2><a href="{{ route('book', $room->id) }}">{{ $room->room_name }}</a></h2>
                                     <span class="price">GH&#8373;{{ $room->price }}</span>
                                 </div>
 
                                 <div class="room_item-back">
-                                    <h3>#{{ $room->room_number }} ({{ $room->room_type }})</h3>
+                                    <h3><a href="{{ route('book', $room->id) }}">{{ $room->room_name }}</a></h3>
                                     <span class="price">GH&#8373;{{ $room->price }}</span>
-                                    <p>Lorem Ipsum is simply dummy text of the <b>printing</b> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
-                                    <a href="{{ route('book', $room->id) }}" class="awe-btn awe-btn-13">VIEW DETAILS</a>
                                 </div>
 
                             </div>
