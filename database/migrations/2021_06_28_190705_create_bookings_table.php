@@ -21,6 +21,15 @@ class CreateBookingsTable extends Migration
             $table->unsignedBigInteger('room_id')->nullable();
             $table->string('username')->nullable();
             $table->string('room_name')->nullable();
+            $table->string('nationality')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('programme')->nullable();
+            $table->string('gender')->nullable();
+            $table->string('level')->nullable();
+            $table->string('guardian_name')->nullable();
+            $table->string('guardian_relationship')->nullable();
+            $table->string('guardian_phone')->nullable();
+            $table->string('guardian_email')->nullable();
             $table->string('status')->nullable();
             $table->softDeletes('deleted_at', 0);
             $table->timestamps();

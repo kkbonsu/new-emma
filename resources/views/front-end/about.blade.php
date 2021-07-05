@@ -84,7 +84,7 @@
                 <div class="container">
                     <!-- HEADER LOGO -->
                     <div class="header_logo">
-                        <a href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
+                        <a href="#"><img src="images/wagyingo_logo.png" alt=""></a>
                     </div>
                     <!-- END / HEADER LOGO -->
                     

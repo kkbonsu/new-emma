@@ -60,10 +60,20 @@ class BookingController extends Controller
         // Create Booking
         $booking = new Booking;
         $booking->booking_code = random_int(1000, 9999);
+        $booking->booking_date = Carbon::today()->toDateString();
         $booking->user_id = Auth::id();
         $booking->username = Auth::user()->name;
         $booking->room_name = $request->input('room_name');
         $booking->room_id = $request->input('room_id');
+        $booking->programme = $request->input('programme');
+        $booking->phone = $request->input('phone');
+        $booking->nationality = $request->input('nationality');
+        $booking->gender = $request->input('gender');
+        $booking->level = $request->input('level');
+        $booking->guardian_name = $request->input('guardian_name');
+        $booking->guardian_phone = $request->input('guardian_phone');
+        $booking->guardian_relationship = $request->input('guardian_relationship');
+        $booking->guardian_email = $request->input('guardian_email');
         $booking->save();
 
         return Redirect::back()->with('success', 'Your Booking Has Been Created');

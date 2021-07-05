@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Booking;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,11 +41,16 @@ Route::resource('details', App\Http\Controllers\DetailController::class);
 Route::get('/findroom', [App\Http\Controllers\FindRoomController::class, 'index'])->name('findroom');
 Route::post('/findrooms', [App\Http\Controllers\FindRoomController::class, 'findroom'])->name('findrooms');
 Route::get('/book/{id}', [App\Http\Controllers\FindRoomController::class, 'book'])->name('book');
+Route::get('printslips/{id}',  [App\Http\Controllers\PDFSlipController::class, 'pdf'])->name('printslips');
 
 // Webpage routes
 
 Route::get('/index-homepage', function () {
-    return view('front-end.index-homepage');
+    $booking = Booking::where('username', Auth::user()->name)->first();
+
+    return view('front-end.index-homepage')->with([
+        'booking' => $booking
+    ]);
 });
 Route::get('/about', function () {
     return view('front-end.about');

@@ -10,7 +10,7 @@
                             <div class="widget widget_logo clearfix">
                                 <div class="widget-logo text-center">
                                     <div class="img">
-                                        <a href="#"><img class="img-center" src="images/wagyingo_logo.jpg" alt=""></a>
+                                        <a href="#"><img class="img-center" src="images/wagyingo_logo.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -24,14 +24,6 @@
                                 <p><i class="lotus-icon-phone mr10"></i> 1-548-854-8898</p>
                                 <p><i class="fa fa-envelope-o mr10"></i> <a href="mailto:hello@thelotushotel.com">hello@thelotushotel.com</a>
                                 </p>
-                            </div>
-                        </div>
-                        <div class="widget">
-                            <h4 class="widget-title f20 bold">Social Links</h4>
-                            <div class="text">
-                                <a class="mr20" href="!#"><i class="fa fa-facebook f20"></i></a>
-                                <a class="mr20" href="!#"><i class="fa fa-twitter f20"></i></a>
-                                <a class="mr20" href="!#"><i class="fa fa-instagram f20"></i></a>
                             </div>
                         </div>
                     </div>

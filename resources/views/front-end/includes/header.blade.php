@@ -19,6 +19,7 @@
                     <a href="#"><span>{{ Auth::user()->name }}</span></a>
                     <ul class="sub-menu">
                         <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
+                        {{-- <li><a href="{{ route('printslips', [$booking->id]) }}">Print Booking Slip</a></li> --}}
                     </ul>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf
@@ -26,7 +27,7 @@
                 </div>
             </div>
             <!-- HEADER LOGO -->
-            <a class="logo-top img-responsive" href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
+            <a class="logo-top img-responsive" href="#"><img src="images/wagyingo_logo.png" alt=""></a>
             <!-- END / HEADER LOGO -->
         </div>
     </div>
@@ -36,7 +37,7 @@
         <div class="container">
             <!-- HEADER LOGO -->
             <div class="header_logo">
-                <a href="#"><img width="100px" height="30px" src="images/wagyingo_logo.jpg" alt=""></a>
+                <a href="#"><img width="100px" height="30px" src="images/wagyingo_logo.png" alt=""></a>
             </div>
             <!-- END / HEADER LOGO -->
             <!-- HEADER MENU -->

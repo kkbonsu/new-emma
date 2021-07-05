@@ -163,20 +163,43 @@
                             <div class="contact-form">
                                 {!! Form::open(array('route' => 'bookings.store', 'method'=>'POST')) !!}
                                     @csrf
-                                    <div class="row">
+                                    <div class="row mb-4">
                                         <div class="col-sm-4">
-                                            <label for="">Your Full Name</label>
                                             <input type="text" class="field-text"  name="name" placeholder="Name" value="{{ Auth::user()->name }}" disabled="true">
                                         </div>
                                         <div class="col-sm-4">
-                                            <label for="">Your Current Year</label>
-                                            <input type="text" class="field-text" name="year" placeholder="Year" value="{{ Auth::user()->detail->level }}" disabled="true">
+                                            <input type="text" class="field-text" name="level" placeholder="Academic Level" value="">
                                         </div>
                                         <div class="col-sm-4">
-                                            <label for="">Your Programme of Study</label>
-                                            <input type="text" class="field-text" name="programme" placeholder="Programme" value="{{ Auth::user()->detail->programme }}" disabled="true">
+                                            <input type="text" class="field-text" name="programme" placeholder="Programme of Study" value="">
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <input type="text" class="field-text" name="phone" placeholder="Phone Number" value="">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="field-text" name="nationality" placeholder="Nationality" value="">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="field-text" name="gender" placeholder="Gender" value="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <input type="text" class="field-text" name="guardian_name" placeholder="Guardian Name" value="">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="text" class="field-text" name="guardian_relationship" placeholder="Relationship with Guardian" value="">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="text" class="field-text" name="guardian_phone" placeholder="Guardian Phone Number" value="">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="text" class="field-text" name="guardian_email" placeholder="Guardian Email" value="">
+                                        </div>
+                                    </div>
+                                    <br><br><br>
                                     <div class="row">
                                         <div class="col-sm-10">
                                             <label for="">Your Selected Room</label>

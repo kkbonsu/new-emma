@@ -15,10 +15,10 @@ class DetailController extends Controller
      */
     public function index(Request $request)
     {
-        $users = User::orderBy('name', 'desc')->paginate(10);
+        $detail = Detail::orderBy('username', 'desc')->get();
 
         return view('details.index')->with([
-            'users' => $users
+            'detail' => $detail
         ]);
     }
 
@@ -29,7 +29,11 @@ class DetailController extends Controller
      */
     public function create()
     {
-        //
+        $users = User::all();
+
+        return view('details.create')->with([
+            'users' => $users
+        ]);
     }
 
     /**
@@ -40,7 +44,21 @@ class DetailController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Create User Detail
+        $detail = new Detail;
+        $detail->user_id = $request->input('user_id');
+        $detail->programme = $request->input('programme');
+        $detail->phone = $request->input('phone');
+        $detail->nationality = $request->input('nationality');
+        $detail->gender = $request->input('gender');
+        $detail->level = $request->input('level');
+        $detail->guardian_name = $request->input('guardian_name');
+        $detail->guardian_phone = $request->input('guardian_phone');
+        $detail->guardian_relationship = $request->input('guardian_relationship');
+        $detail->guardian_email = $request->input('guardian_email');
+        $detail->save();
+
+        return redirect('/details')->with('success', 'User Details Added');
     }
 
     /**
@@ -51,7 +69,7 @@ class DetailController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
@@ -74,7 +92,20 @@ class DetailController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $detail = Detail::find($id);
+        $detail->user_id = $request->input('user_id');
+        $detail->programme = $request->input('programme');
+        $detail->phone = $request->input('phone');
+        $detail->nationality = $request->input('nationality');
+        $detail->gender = $request->input('gender');
+        $detail->level = $request->input('level');
+        $detail->guardian_name = $request->input('guardian_name');
+        $detail->guardian_phone = $request->input('guardian_phone');
+        $detail->guardian_relationship = $request->input('guardian_relationship');
+        $detail->guardian_email = $request->input('guardian_email');
+        $detail->save();
+
+        return redirect('/details')->with('success', 'User Details Updated');
     }
 
     /**

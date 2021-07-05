@@ -85,7 +85,7 @@
                 <div class="container">
                     <!-- HEADER LOGO -->
                     <div class="header_logo">
-                        <a href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
+                        <a href="#"><img src="images/wagyingo_logo.png" alt=""></a>
                     </div>
                     <!-- END / HEADER LOGO -->
                     
@@ -221,7 +221,7 @@
                             <div class="widget widget_logo">
                                 <div class="widget-logo">
                                     <div class="img">
-                                        <a href="#"><img src="images/wagyingo_logo.jpg" alt=""></a>
+                                        <a href="#"><img src="images/wagyingo_logo.png" alt=""></a>
                                     </div>
                                     <div class="text">
                                         <p><i class="lotus-icon-location"></i> 225 Beach Street, Australian</p>

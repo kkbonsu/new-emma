@@ -625,7 +625,8 @@ footer.footer-style-3 {
         color: #fff; }
 
 footer .bgr-footer {
-  background: url(../images/home-3/footer/footer-center.png) no-repeat !important;
+ /* background: url(../images/home-3/footer/footer-center.png) no-repeat !important; */
+  background-color:  #000;
   background-size: cover !important;
   position: relative; }
 

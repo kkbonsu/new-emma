@@ -33,7 +33,7 @@
                     <div class="col-sm-6">
                     </div>
                     <div class="col-sm-6 text-right">
-                        <a class="btn btn-success mb-3 btn-sm" href="/users/create"><i class="fas fa-plus"></i> Add Details to a User</a>
+                        <a class="btn btn-success mb-3 btn-sm" href="/details/create"><i class="fas fa-plus"></i> Add Details to a User</a>
                     </div>
                 </div>
                 <div class="dt-responsive table-responsive">
@@ -46,39 +46,23 @@
                                 <th>Phone</th>
                                 <th>Nationality</th>
                                 <th>Gender</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
-                        @foreach ($users as $user)
+                        @foreach ($detail as $detail)
                         <tbody>
                             <tr>
                                 <td>
                                     <div class="d-inline-block align-middle">
                                         <div class="d-inline-block">
-                                            <h6 class="m-b-0">{{ $user->name }}</h6>
-                                            <p class="m-b-0">{{ $user->programme }}</p>
-                                            <p class="m-b-0">{{ $user->level }}</p>
-                                            <p class="m-b-0">{{ $user->phone }}</p>
-                                            <p class="m-b-0">{{ $user->nationality }}</p>
-                                            <p class="m-b-0">{{ $user->gender }}</p>
+                                            <h6 class="m-b-0">{{ $detail->user->name }}</h6>
                                         </div>
                                     </div>
                                 </td>
-                                <td>
-                                    @if(!empty($user->getRoleNames()))
-                                        @foreach($user->getRoleNames() as $v)
-                                            <label class="badge badge-success">{{ $v }}</label>
-                                        @endforeach
-                                    @endif
-                                </td>
-                                <td>
-                                    <a class="btn btn-icon btn-outline-dark" title="Assign Permission" href="{{ route('user-permissions', $user->id) }}"><i class="feather icon-toggle-right"></i></a>
-                                    <a class="btn btn-icon btn-outline-info" title="Show Details" href="{{ route('users.show', $user->id) }}"><i class="feather icon-eye"></i></a>
-                                    <a class="btn btn-icon btn-outline-warning" title="Edit Details" href="{{ route('users.edit', $user->id) }}"><i class="feather icon-edit"></i></a>
-                                    {!! Form::open(['method' => 'DELETE','route' => ['users.destroy', $user->id], 'style'=>'display:inline']) !!}
-                                        {!! Form::submit('Delete', ['class' => 'btn btn-icon btn-outline-danger']) !!}
-                                    {!! Form::close() !!}
-                                </td>
+                                <td>{{ $detail->programme }}</td>
+                                <td>{{ $detail->level }}</td>
+                                <td>{{ $detail->phone }}</td>
+                                <td>{{ $detail->nationality }}</td>
+                                <td>{{ $detail->gender }}</td>
                             </tr>
                         </tbody>
                         @endforeach
@@ -88,6 +72,6 @@
         </div>
     </div>
 </div>
-{!! $users->render() !!}
+{{-- {!! $detail->render() !!} --}}
 
 @endsection
