@@ -19,7 +19,7 @@
                     <a href="#"><span>{{ Auth::user()->name }}</span></a>
                     <ul class="sub-menu">
                         <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
-                        {{-- <li><a href="{{ route('printslips', [$booking->id]) }}">Print Booking Slip</a></li> --}}
+                        <li><a href="{{ route('students.index') }}">View Mini-Dashboard</a></li>
                     </ul>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf

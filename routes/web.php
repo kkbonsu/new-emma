@@ -38,6 +38,7 @@ Route::resource('amenities', App\Http\Controllers\AmenityController::class);
 Route::resource('reservations', App\Http\Controllers\ReservationController::class);
 Route::resource('transfers', App\Http\Controllers\TransferController::class);
 Route::resource('details', App\Http\Controllers\DetailController::class); 
+Route::resource('students', App\Http\Controllers\StudentController::class);
 Route::get('/findroom', [App\Http\Controllers\FindRoomController::class, 'index'])->name('findroom');
 Route::post('/findrooms', [App\Http\Controllers\FindRoomController::class, 'findroom'])->name('findrooms');
 Route::get('/book/{id}', [App\Http\Controllers\FindRoomController::class, 'book'])->name('book');
@@ -46,11 +47,7 @@ Route::get('printslips/{id}',  [App\Http\Controllers\PDFSlipController::class, '
 // Webpage routes
 
 Route::get('/index-homepage', function () {
-    $booking = Booking::where('username', Auth::user()->name)->first();
-
-    return view('front-end.index-homepage')->with([
-        'booking' => $booking
-    ]);
+    return view('front-end.index-homepage');
 });
 Route::get('/about', function () {
     return view('front-end.about');

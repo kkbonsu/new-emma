@@ -13,7 +13,7 @@
                     <a href="#"><i class="fa fa-twitter"></i></a>
                 </span>
                 <div class="dropdown currency">
-                    <span><a href="{{ route('login') }}">Login</a></span>
+                    {{-- <span><a href="{{ route('login') }}">Login</a></span> --}}
                 </div>
             </div>
         </div>

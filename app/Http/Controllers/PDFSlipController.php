@@ -30,7 +30,7 @@ class PDFSlipController extends Controller
         foreach($booking_data as $booking_data)
         {
             $output .= '
-            <img width="700px" height="100px" src="images/wagyingo_logo.jpg" />
+            <img width="700px" height="100px" src="images/wagyingo_logo.png" />
             <p style="text-align: center">KNUST Ayeduase</p>
             <p style="text-align: center">0203541258 / 0214587523</p>
             <p style="text-align: center">enquiries@wagyingohostel.com</p>
@@ -64,6 +64,12 @@ class PDFSlipController extends Controller
             <br>
             <br>
             <br>
+            <hr>
+            <h3>GUARDIAN DETAILS</h3>
+            <p>Guardian Name: '.$booking_data->guardian_name.'</p>
+            <p>Relationship: '.$booking_data->guardian_relationship.'</p>
+            <p>Guardian Phone Number: '.$booking_data->guardian_phone.'</p>
+            <p>Guardian Email: '.$booking_data->guardian_email.'</p>
             <hr>
             <br>
             <br>

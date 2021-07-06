@@ -15,7 +15,7 @@ class FindRoomController extends Controller
         if ($request->isMethod('POST')) {
             $rooms = Room::without('booking')->whereHas('booking', function ($q) use ($room) {
                 $q->where(function ($q2) use ($room) {
-                    $q2->where('room_name', 'like', $room);
+                    $q2->where('room_name', 'like', 'room');
                 });
             })->orWhereDoesntHave('booking')->get();
         } else {

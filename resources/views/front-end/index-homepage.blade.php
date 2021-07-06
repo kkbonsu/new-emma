@@ -126,7 +126,7 @@
                 </div>
                 {!! Form::open(array('route' => 'findrooms', 'method'=>'POST')) !!}
                     @csrf
-                    <div class="availability-form mb50">
+                    {{-- <div class="availability-form mb50">
                         <select class="awe-select" name="room">
                             <option disabled="true">Room</option>
                             <option value="Single">Single</option>
@@ -136,21 +136,11 @@
                             <option value="Basement Double">Basement Double</option>
                             <option value="Basement Quad">Basement Quad</option>
                         </select>
-                    </div>
+                    </div> --}}
                     <div class="vailability-submit">
-                        <button type="submit" class="awe-btn awe-btn-13 pr30 pl30 f16 bold font-hind">Check Availability</button>
+                        <button type="submit" class="awe-btn awe-btn-13 pr30 pl30 f16 bold font-hind">Check For Available Rooms</button>
                     </div>
                 {!! Form::close() !!}
-                {{-- <form action="{{ route('findrooms') }}" class="form-inline">
-                    <div class="availability-form mb50">
-                        <div class="form-group mr-sm-2">
-                            <input class="form-control" type="search" name="q" value="" placeholder="Search...">
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="awe-btn awe-btn-13 pr30 pl30 f16 bold font-hind">Search</button>
-                        </div>
-                    </div>
-                </form> --}}
             </div>
         </div>
     </section>
