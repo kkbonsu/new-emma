@@ -2,7 +2,7 @@
     <div class="navbar-wrapper">
         <div class="navbar-content scroll-div">
             <ul class="nav pcoded-inner-navbar">
-                <li class="nav-item"><a href="/home" class="nav-link"><span class="pcoded-micon"><i class="fas fa-vr-cardboard"></i></span><span class="pcoded-mtext">Booking Details</span></a></li>
+                <li class="nav-item"><a href="/students" class="nav-link"><span class="pcoded-micon"><i class="fas fa-vr-cardboard"></i></span><span class="pcoded-mtext">Booking Details</span></a></li>
                 @can('admin')
                 <li class="nav-item pcoded-menu-caption">
                     <label>Admin</label>

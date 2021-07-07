@@ -66,7 +66,7 @@ class RoomController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'room_number' => 'required',
+            'room_name' => 'required',
         ]);
 
         // Create Room
@@ -125,8 +125,7 @@ class RoomController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'room_number' => 'required',
-            'type_id' => 'required'
+            'room_name' => 'required',
         ]);
 
         // Update Room

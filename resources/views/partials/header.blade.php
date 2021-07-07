@@ -5,7 +5,7 @@
         <a href="/home" class="b-brand" style="color: white">
             <!-- ========   change your logo hear   ============ -->
             {{-- <img src="/assets/images/logo.png" alt="" class="logo"> --}}
-            DEMO VERSION
+            HOME
         </a>
         <a href="#!" class="mob-toggler">
             <i class="feather icon-more-vertical"></i>
