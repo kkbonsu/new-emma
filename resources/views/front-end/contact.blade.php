@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" href="images/favicon.png"/>
+    <link rel="shortcut icon" href="images/wagyingo_logo.png"/>
 
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Hind:400,300,500,600%7cMontserrat:400,700' rel='stylesheet' type='text/css'>
@@ -69,6 +69,7 @@
                             <a href="#"><span>{{ Auth::user()->name }}</span></a>
                             <ul class="sub-menu">
                                 <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
+                                <li><a href="{{ route('students.index') }}">View Booking Details</a></li>
                             </ul>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
@@ -157,7 +158,6 @@
 
                             <div class="text">
                                 <h2>Contact</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                                 <ul>
                                     <li><i class="icon lotus-icon-location"></i> DX 32 KINGDOM ST, GHANA</li>
                                     <li><i class="icon lotus-icon-phone"></i> +233 20 365 2247</li>

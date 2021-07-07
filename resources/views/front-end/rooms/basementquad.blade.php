@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" href="images/favicon.png"/>
+    <link rel="shortcut icon" href="images/wagyingo_logo.png"/>
 
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Hind:400,300,500,600%7cMontserrat:400,700' rel='stylesheet' type='text/css'>
@@ -69,6 +69,7 @@
                             <a href="#"><span>{{ Auth::user()->name }}</span></a>
                             <ul class="sub-menu">
                                 <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
+                                <li><a href="{{ route('students.index') }}">View Booking Details</a></li>
                             </ul>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
@@ -149,22 +150,6 @@
             <div class="container">
 
                 <div class="room-wrap-2">
-
-                    <!-- ITEM -->
-                    <div class="room_item-2">
-
-                        <div class="img">
-                            <a href="#"><img src="images/room/room2/img-1.jpg" alt=""></a>
-                        </div>
-
-                        <div class="text">
-                            <h2><a href="#">BASEMENT TRIPLE ROOM without Air Conditioning</a></h2>
-                            <span class="price">Priced At <span class="amout">GH&#8373;3000</span> </span>
-                            <p>Self Contained Room that comes with a <b>TV </b> with a <b>DSTV subscription</b>, <b>Air Conditioner</b> and a <b>fridge.</b> A bathroom and a balcony.</p>                            {{-- <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a> --}}
-                            {{-- <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a> --}}
-                        </div>
-                    </div>
-                    <!-- ITEM -->
 
                     <!-- ITEM -->
                     <div class="room_item-2 img-right">
