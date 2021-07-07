@@ -13,7 +13,7 @@ class FindRoomController extends Controller
         $room = $request->input('room');
         
         if ($request->isMethod('POST')) {
-            $rooms = Room::without('booking')->whereHas('booking', function ($q) use ($room) {
+            $rooms = Room::without('booking', '<', 2)->whereHas('booking', function ($q) use ($room) {
                 $q->where(function ($q2) use ($room) {
                     $q2->where('room_name', 'like', 'room');
                 });

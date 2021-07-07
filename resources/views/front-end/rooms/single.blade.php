@@ -106,7 +106,7 @@
                                     <li><a href="/quad">Quad</a></li>
                                     <li><a href="/basement2in2">Basement 2 in 2</a></li>
                                     <li><a href="/basementdouble">Basement Double</a></li>
-                                    <li><a href="/basementquad">Basement Quad</a></li>
+                                    <li><a href="/basementquad">Basement Triple</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -161,7 +161,7 @@
                             <h2><a href="#">SINGLE ROOM without Air Conditioning</a></h2>
                             <span class="price">Priced At <span class="amout"><b>GH&#8373;7000.00</b></span> per academic year</span>
                             <p>Self Contained Room that comes with a <b>TV </b> with a <b>DSTV subscription</b>, and a <b>fridge</b>. A bathroom and a balcony.</p>
-                            <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                            {{-- <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a> --}}
                         </div>
                     </div>
                     <!-- ITEM -->
@@ -176,7 +176,8 @@
                         <div class="text">
                             <h2><a href="#">Single Room with Air Conditioning</a></h2>
                             <span class="price">Priced at <span class="amout"><b>GH&#8373;8000.00</b></span> per academic year</span>
-                            <p>Self Contained Room that comes with a <b>TV </b> with a <b>DSTV subscription</b>, <b>Air Conditioner</b> and a <b>fridge</b>A bathroom and a balcony.</p>                          <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                            <p>Self Contained Room that comes with a <b>TV </b> with a <b>DSTV subscription</b>, <b>Air Conditioner</b> and a <b>fridge</b>A bathroom and a balcony.</p>                          
+                            {{-- <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a> --}}
                         </div>
                     </div>
                     <!-- ITEM -->
@@ -255,9 +256,10 @@
                                         <a href="#"><img src="images/wagyingo_logo.png" alt=""></a>
                                     </div>
                                     <div class="text">
-                                        <p><i class="lotus-icon-location"></i> 225 Beach Street, Australian</p>
-                                        <p><i class="lotus-icon-phone"></i> 1-548-854-8898</p>
-                                        <p><i class="fa fa-envelope-o"></i> <a href="mailto:hello@thelotushotel.com">hello@thelotushotel.com</a></p>
+                                        <p><i class="lotus-icon-location mr10"></i>DX 32 KINGDOM ST, GHANA</p>
+                                        <p><i class="lotus-icon-phone mr10"></i> 233 20 365 2247</p>
+                                        <p><i class="fa fa-envelope-o mr10"></i> <a href="mailto:students.wagyingo@gmail.com">students.wagyingo@gmail.com</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -265,22 +267,10 @@
 
                         <div class="col-xs-4 col-lg-2">
                             <div class="widget">
-                                <h4 class="widget-title">Page site</h4>
-                                <ul>
-                                    <li><a href="#">Guest Book</a></li>
-                                    <li><a href="#">Gallery</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Event</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-lg-2">
-                            <div class="widget">
                                 <h4 class="widget-title">ABOUT</h4>
                                 <ul>
-                                    <li><a href="">About</a></li>
-                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>

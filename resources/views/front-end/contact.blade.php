@@ -54,8 +54,8 @@
             <div class="header_top">
                 <div class="container">
                     <div class="header_left float-left">
-                        <span><i class="lotus-icon-location"></i> 225 Beach Street, Australian</span>
-                        <span><i class="lotus-icon-phone"></i> 1-548-854-8898</span>
+                        <span><i class="lotus-icon-location"></i> DX 32 KINGDOM ST, GHANA</span>
+                        <span><i class="lotus-icon-phone"></i> 233 20 365 2247</span>
                     </div>
                     <div class="header_right float-right">
                         <span class="socials">
@@ -139,7 +139,6 @@
                 <div class="container">
                     <div class="text text-center">
                         <h2>CONTACT US</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing</p>
                     </div>
                 </div>
 
@@ -160,53 +159,10 @@
                                 <h2>Contact</h2>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
                                 <ul>
-                                    <li><i class="icon lotus-icon-location"></i> 225 Beach Street, Australian</li>
-                                    <li><i class="icon lotus-icon-phone"></i> +61 2 6854 8496</li>
-                                    <li><i class="icon fa fa-envelope-o"></i> lotushotel@gmail.com</li>
+                                    <li><i class="icon lotus-icon-location"></i> DX 32 KINGDOM ST, GHANA</li>
+                                    <li><i class="icon lotus-icon-phone"></i> +233 20 365 2247</li>
+                                    <li><i class="icon fa fa-envelope-o"></i> students.wagyingo@@gmail.com</li>
                                 </ul>
-                            </div>
-
-                            <div class="contact-location">
-                                <a class="btn-collapse" data-toggle="collapse" href="#location">OTHER LOCATION <span class="fa fa-angle-down"></span></a>
-                                <div class="collapse" id="location">
-                                    <div class="location-group">
-                                        <h6>NORTH AMERICA</h6>
-                                        <span>Caribbean, French West Indies</span>
-
-                                        <!-- ITEM -->
-                                        <div class="location-item" data-location="39.0926986,-94.5747324">
-                                            <div class="img">
-                                                <img src="images/contact/img-1.jpg" alt="">
-                                                <i class="fa  fa-map-marker"></i>
-                                            </div>
-                                            <div class="text">
-                                                <address>PO Box 4077, 2584 St Martin, CEDEX, French West Indies</address>
-                                                <p>
-                                                    Tel: 858 634 8975 <br>
-                                                    Fax: +1 212 854 7039
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- END / ITEM -->
-
-                                        <!-- ITEM -->
-                                        <div class="location-item" data-location="39.0912284,-94.5743515">
-                                            <div class="img">
-                                                <img src="images/contact/img-2.jpg" alt="">
-                                                <i class="fa  fa-map-marker"></i>
-                                            </div>
-                                            <div class="text">
-                                                <address>PO Box 4077, 2584 St Martin, CEDEX, French West Indies</address>
-                                                <p>
-                                                    Tel: 858 634 8975 <br>
-                                                    Fax: +1 212 854 7039
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- END / ITEM -->
-
-                                    </div>
-                                </div>
                             </div>
 
                         </div>
@@ -284,12 +240,13 @@
                             <div class="widget widget_logo">
                                 <div class="widget-logo">
                                     <div class="img">
-                                        <a href="#"><img src="images/logo-footer.png" alt=""></a>
+                                        <a href="#"><img src="images/wagyingo_logo.png" alt=""></a>
                                     </div>
                                     <div class="text">
-                                        <p><i class="lotus-icon-location"></i> 225 Beach Street, Australian</p>
-                                        <p><i class="lotus-icon-phone"></i> 1-548-854-8898</p>
-                                        <p><i class="fa fa-envelope-o"></i> <a href="mailto:hello@thelotushotel.com">hello@thelotushotel.com</a></p>
+                                        <p><i class="lotus-icon-location mr10"></i>DX 32 KINGDOM ST, GHANA</p>
+                                        <p><i class="lotus-icon-phone mr10"></i> 233 20 365 2247</p>
+                                        <p><i class="fa fa-envelope-o mr10"></i> <a href="mailto:students.wagyingo@gmail.com">students.wagyingo@gmail.com</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -297,22 +254,10 @@
 
                         <div class="col-xs-4 col-lg-2">
                             <div class="widget">
-                                <h4 class="widget-title">Page site</h4>
-                                <ul>
-                                    <li><a href="#">Guest Book</a></li>
-                                    <li><a href="#">Gallery</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Event</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-lg-2">
-                            <div class="widget">
                                 <h4 class="widget-title">ABOUT</h4>
                                 <ul>
-                                    <li><a href="">About</a></li>
-                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>

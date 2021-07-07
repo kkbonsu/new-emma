@@ -19,7 +19,7 @@
                     <a href="#"><span>{{ Auth::user()->name }}</span></a>
                     <ul class="sub-menu">
                         <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
-                        <li><a href="{{ route('students.index') }}">View Mini-Dashboard</a></li>
+                        <li><a href="{{ route('students.index') }}">View Booking Details</a></li>
                     </ul>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf
@@ -57,7 +57,7 @@
                             <li><a href="/quad">Quad</a></li>
                             <li><a href="/basement2in2">Basement 2 in 2</a></li>
                             <li><a href="/basementdouble">Basement Double</a></li>
-                            <li><a href="/basementquad">Basement Quad</a></li>
+                            <li><a href="/basementquad">Basement Triple</a></li>
                         </ul>
                     </li>
                     <li>

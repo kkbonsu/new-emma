@@ -20,7 +20,7 @@
     <div class="card-body">
         <p>Booking Date: {{ $booking->booking_date }}</p>
         <p>Your Name: {{ $booking->username }}</p>
-        <p>Room Booked: {{ $booking->room_name }}</p>
+        <p>Room Booked: {{ $booking->room_name }} (GH&#8373;{{ $booking->room->price }})</p>
         <p>Nationality: {{ $booking->nationality }}</p>
         <p>Programme of Study: {{ $booking->programme }}</p>
         <p>Academic Level: {{ $booking->level }}</p>
@@ -33,7 +33,11 @@
     </div>
     <div class="card-body">
         <a class="btn btn-lg btn-success" href="{{ route('printslips', [$booking->id]) }}">Print Booking Slip</a>
+        @if ($booking->room->price = 5000)
+            <a class="btn btn-lg btn-info" href="https://ravesandbox.flutterwave.com/pay/df8dqks1zuao" target="_blank">Payment Link</a>
+        @endif
     </div>
+
 </div>
 
 @endsection

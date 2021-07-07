@@ -106,7 +106,7 @@
                                     <li><a href="/quad">Quad</a></li>
                                     <li><a href="/basement2in2">Basement 2 in 2</a></li>
                                     <li><a href="/basementdouble">Basement Double</a></li>
-                                    <li><a href="/basementquad">Basement Quad</a></li>
+                                    <li><a href="/basementquad">Basement Triple</a></li>
                                 </ul>
                             </li>
                             <li class="current-menu-item">
@@ -137,7 +137,6 @@
                 <div class="container">
                     <div class="text text-center">
                         <h2>Gallery</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing</p>
                     </div>
                 </div>
             </div>
@@ -154,10 +153,10 @@
                     <div class="gallery-cat text-center">
                         <ul class="list-inline">
                             <li class="active"><a href="#" data-filter="*">All</a></li>
-                            <li><a href="#" data-filter=".ground">HOTEL &amp; GROUND</a></li>
-                            <li><a href="#" data-filter=".suite">ROOM/SUITE </a></li>
-                            <li><a href="#" data-filter=".bathroom">BATHROOM</a></li>
-                            <li><a href="#" data-filter=".dining">DINING</a></li>
+                            {{-- <li><a href="#" data-filter=".ground">HOSTEL &amp; GROUNDS</a></li>
+                            <li><a href="#" data-filter=".suite">ROOMS </a></li>
+                            <li><a href="#" data-filter=".bathroom">BATHROOMS</a></li>
+                            <li><a href="#" data-filter=".dining">STUDY ROOMS</a></li> --}}
                         </ul>
                     </div>
                     <!-- END / FILTER -->
@@ -175,8 +174,8 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope suite dining">
                                     <div class="gallery_item">
-                                        <a href="https://www.youtube.com/watch?v=RnjZ6IhkR40" class="mfp-iframe">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/video.mp4" class="mfp-iframe">
+                                            <img src="images/gallery/1.png" alt="">
                                         </a>
                                         <span class="icon"><i class="fa lotus-icon-media-play"></i></span>
                                     </div>
@@ -186,10 +185,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope ground bathroom suite">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/22.jpg" class="mfp-image">
+                                            <img src="images/gallery/22.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -197,21 +195,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope  ground bathroom dinin">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/3.jpg" class="mfp-image">
+                                            <img src="images/gallery/3.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="item-isotope suite dining">
-                                    <div class="gallery_item">
-                                        <a href="https://www.youtube.com/watch?v=RnjZ6IhkR40" class="mfp-iframe">
-                                            <img src="images/gallery/img-1.jpg" alt="">
-                                        </a>
-                                        <span class="icon"><i class="fa lotus-icon-media-play"></i></span>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -219,10 +205,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope  ground suite dining">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/4.jpg" class="mfp-image">
+                                            <img src="images/gallery/4.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -230,10 +215,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope ground bathroom dining">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/5.jpg" class="mfp-image">
+                                            <img src="images/gallery/5.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -241,10 +225,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope ground suite dining">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/6.jpg" class="mfp-image">
+                                            <img src="images/gallery/6.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -252,10 +235,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope bathroom suite dining">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/7.jpg" class="mfp-image">
+                                            <img src="images/gallery/7.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -263,10 +245,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope bathroom suite dining">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/7.jpg" class="mfp-image">
+                                            <img src="images/gallery/7.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -274,10 +255,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope  ">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/8.jpg" class="mfp-image">
+                                            <img src="images/gallery/8.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -285,10 +265,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope ground bathroom suite">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/9.jpg" class="mfp-image">
+                                            <img src="images/gallery/9.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -296,19 +275,17 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope ground bathroom">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/10.jpg" class="mfp-image">
+                                            <img src="images/gallery/10.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
                                 <div class="item-isotope suite dining">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/11.jpg" class="mfp-image">
+                                            <img src="images/gallery/11.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -316,21 +293,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope ground bathroom suite">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/12.jpg" class="mfp-image">
+                                            <img src="images/gallery/12.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
-                                    </div>
-                                </div>
-                                <!-- END / ITEM -->
-
-                                <!-- ITEM -->
-                                <div class="item-isotope  ground bathroom dinin">
-                                    <div class="gallery_item">
-                                        <a href="https://www.youtube.com/watch?v=RnjZ6IhkR40" class="mfp-iframe">
-                                            <img src="images/gallery/img-1.jpg" alt="">
-                                        </a>
-                                        <span class="icon"><i class="fa lotus-icon-media-play"></i></span>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -338,19 +303,17 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope suite dining">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/13.jpg" class="mfp-image">
+                                            <img src="images/gallery/13.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
                                 <div class="item-isotope suite dining">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/14.jpg" class="mfp-image">
+                                            <img src="images/gallery/14.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -358,10 +321,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope ground bathroom suite">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/15.jpg" class="mfp-image">
+                                            <img src="images/gallery/15.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -369,10 +331,9 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope  ground bathroom dinin">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/16.jpg" class="mfp-image">
+                                            <img src="images/gallery/16.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -380,10 +341,29 @@
                                 <!-- ITEM -->
                                 <div class="item-isotope suite dining">
                                     <div class="gallery_item">
-                                        <a href="images/gallery/popup/img-1.jpg" class="mfp-image">
-                                            <img src="images/gallery/img-1.jpg" alt="">
+                                        <a href="images/gallery/17.jpg" class="mfp-image">
+                                            <img src="images/gallery/17.jpg" alt="">
                                         </a>
-                                        <h6 class="text">Lorem Ipsum is simply dummy text of the printing</h6>
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="item-isotope suite dining">
+                                    <div class="gallery_item">
+                                        <a href="images/gallery/23.jpg" class="mfp-image">
+                                            <img src="images/gallery/23.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                                <!-- ITEM -->
+                                <div class="item-isotope suite dining">
+                                    <div class="gallery_item">
+                                        <a href="images/gallery/25.jpg" class="mfp-image">
+                                            <img src="images/gallery/25.jpg" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- END / ITEM -->
@@ -432,12 +412,13 @@
                             <div class="widget widget_logo">
                                 <div class="widget-logo">
                                     <div class="img">
-                                        <a href="#"><img src="images/logo-footer.png" alt=""></a>
+                                        <a href="#"><img src="images/wagyingo_logo.png" alt=""></a>
                                     </div>
                                     <div class="text">
-                                        <p><i class="lotus-icon-location"></i> 225 Beach Street, Australian</p>
-                                        <p><i class="lotus-icon-phone"></i> 1-548-854-8898</p>
-                                        <p><i class="fa fa-envelope-o"></i> <a href="mailto:hello@thelotushotel.com">hello@thelotushotel.com</a></p>
+                                        <p><i class="lotus-icon-location mr10"></i>DX 32 KINGDOM ST, GHANA</p>
+                                        <p><i class="lotus-icon-phone mr10"></i> 233 20 365 2247</p>
+                                        <p><i class="fa fa-envelope-o mr10"></i> <a href="mailto:students.wagyingo@gmail.com">students.wagyingo@gmail.com</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -445,22 +426,10 @@
 
                         <div class="col-xs-4 col-lg-2">
                             <div class="widget">
-                                <h4 class="widget-title">Page site</h4>
-                                <ul>
-                                    <li><a href="#">Guest Book</a></li>
-                                    <li><a href="#">Gallery</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Event</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-lg-2">
-                            <div class="widget">
                                 <h4 class="widget-title">ABOUT</h4>
                                 <ul>
-                                    <li><a href="">About</a></li>
-                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>

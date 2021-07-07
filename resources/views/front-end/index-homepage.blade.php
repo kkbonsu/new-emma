@@ -80,8 +80,6 @@
                          data-speed="700" data-easing="easeOutBack" data-start="2000" style="color:#fff"><b>WAGYINGO HOSTEL</b>
                     </div>
 
-                    <a href="#" class="tp-caption sfb fadeout awe-btn awe-btn-12 awe-btn-slider" data-x="center"
-                       data-y="380" data-easing="easeOutBack" data-speed="700" data-start="2200" style="color: white black">VIEW NOW</a>
                 </li>
 
                 <li data-transition="fade">
@@ -94,17 +92,17 @@
                     </div>
 
                     <div class="tp-caption sft fadeout slider-caption-sub slider-caption-sub-3" data-x="center"
-                         data-y="220" data-speed="700" data-start="1500" data-easing="easeOutBack" style="color: black">
+                         data-y="220" data-speed="700" data-start="1500" data-easing="easeOutBack" style="color: rgb(255, 255, 255)04, 70, 70)">
                         SERVICE IS
                     </div>
 
                     <div class="tp-caption sfb fadeout slider-caption slider-caption-3" data-x="center" data-y="260"
-                         data-speed="700" data-easing="easeOutBack" data-start="2000" style="color: black">
+                         data-speed="700" data-easing="easeOutBack" data-start="2000" style="color: rgb(255, 255, 255)">
                         UNIQUE 
                     </div>
 
                     <div class="tp-caption sfb fadeout slider-caption-sub slider-caption-sub-3" data-x="center"
-                         data-y="365" data-easing="easeOutBack" data-speed="700" data-start="2200" style="color: black">JUST LIKE YOU
+                         data-y="365" data-easing="easeOutBack" data-speed="700" data-start="2200" style="color: rgb(255, 255, 255)">JUST LIKE YOU
                     </div>
 
                     <div class="tp-caption sfb fadeout slider-caption-sub slider-caption-sub-3" data-x="center"
@@ -179,7 +177,7 @@
                                         </div>
                                         <h2 class="title"><a href="/single">Single Room</a></h2>
                                         <p class="price">
-                                            Start from $120 per day
+                                            Starts from GH&#8373;7000
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/single"> View
                                             Details</a>
@@ -193,7 +191,7 @@
                                         </div>
                                         <h2 class="title"><a href="/double">Double Room</a></h2>
                                         <p class="price">
-                                            Start from $120 per day
+                                            Starts from GH&#8373;4500
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/double"> View
                                             Details</a>
@@ -207,7 +205,7 @@
                                         </div>
                                         <h2 class="title"><a href="/quad">Quad Room</a></h2>
                                         <p class="price">
-                                            Start from $120 per day
+                                            Starts from GH&#8373;3500
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/quad"> View
                                             Details</a>
@@ -221,7 +219,7 @@
                                         </div>
                                         <h2 class="title"><a href="/basement2in2">Basement 2 in 2</a></h2>
                                         <p class="price">
-                                            Start from $480 per day
+                                            Starts from GH&#8373;3000
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/basement2in2"> View
                                             Details</a>
@@ -235,7 +233,7 @@
                                         </div>
                                         <h2 class="title"><a href="/basementdouble">Basement Double</a></h2>
                                         <p class="price">
-                                            Start from $120 per day
+                                            Starts from GH&#8373;3100
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/basementdouble"> View
                                             Details</a>
@@ -247,9 +245,9 @@
                                             <a href="/basementquad"><img class="img-responsive img-full" src="images/Rooms/basement_quad.jpg"
                                                              alt=""></a>
                                         </div>
-                                        <h2 class="title"><a href="/basementquad">Basement Quad</a></h2>
+                                        <h2 class="title"><a href="/basementquad">Basement Triple</a></h2>
                                         <p class="price">
-                                            Start from $120 per day
+                                            Starts from GH&#8373;3000
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/basementquad"> View
                                             Details</a>
@@ -266,7 +264,7 @@
                                         </div>
                                         <h2 class="title"><a href="/single">Single Room</a></h2>
                                         <p class="price">
-                                            Start from $120 per day
+                                            Starts from GH&#8373;7000
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/single"> View
                                             Details</a>
@@ -280,7 +278,7 @@
                                         </div>
                                         <h2 class="title"><a href="/double">Double Room</a></h2>
                                         <p class="price">
-                                            Start from $120 per day
+                                            Starts from GH&#8373;4500
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/double"> View
                                             Details</a>
@@ -294,7 +292,7 @@
                                         </div>
                                         <h2 class="title"><a href="/quad">Quad Room</a></h2>
                                         <p class="price">
-                                            Start from $120 per day
+                                            Starts from GH&#8373;3500
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/quad"> View
                                             Details</a>
@@ -308,7 +306,7 @@
                                         </div>
                                         <h2 class="title"><a href="/basement2in2">Basement 2 in 2</a></h2>
                                         <p class="price">
-                                            Start from $480 per day
+                                            Starts from GH&#8373;3000
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/basement2in2"> View
                                             Details</a>
@@ -322,7 +320,7 @@
                                         </div>
                                         <h2 class="title"><a href="/basementdouble">Basement Double</a></h2>
                                         <p class="price">
-                                            Start from $120 per day
+                                            Starts from GH&#8373;3100
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/basementdouble"> View
                                             Details</a>
@@ -336,7 +334,7 @@
                                         </div>
                                         <h2 class="title"><a href="/basementquad">Basement Quad</a></h2>
                                         <p class="price">
-                                            Start from $120 per day
+                                            Starts from GH&#8373;3000
                                         </p>
                                         <a class="awe-btn awe-btn-default btn-medium font-hind f12 bold" href="/basementquad"> View
                                             Details</a>

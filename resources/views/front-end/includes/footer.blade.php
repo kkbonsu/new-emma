@@ -20,28 +20,19 @@
                         <div class="widget">
                             <h4 class="widget-title f20 bold">Information</h4>
                             <div class="text">
-                                <p><i class="lotus-icon-location mr10"></i> 225 Beach Street, Australian</p>
-                                <p><i class="lotus-icon-phone mr10"></i> 1-548-854-8898</p>
-                                <p><i class="fa fa-envelope-o mr10"></i> <a href="mailto:hello@thelotushotel.com">hello@thelotushotel.com</a>
+                                <p><i class="lotus-icon-location mr10"></i>DX 32 KINGDOM ST, GHANA</p>
+                                <p><i class="lotus-icon-phone mr10"></i> 233 20 365 2247</p>
+                                <p><i class="fa fa-envelope-o mr10"></i> <a href="mailto:students.wagyingo@gmail.com">students.wagyingo@gmail.com</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <div class="widget">
-                            <h4 class="widget-title f20 bold">Hotel</h4>
+                            <h4 class="widget-title f20 bold">About</h4>
                             <ul>
-                                <li><a href="#">Accommodation</a></li>
-                                <li><a href="#">Gallery</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <div class="widget">
-                            <h4 class="widget-title f20 bold">More Link</h4>
-                            <ul>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Contact Us</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>

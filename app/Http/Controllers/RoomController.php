@@ -22,7 +22,7 @@ class RoomController extends Controller
      */
     public function index(Request $request)
     {
-        $sortBy = 'room_number';
+        $sortBy = 'room_name';
         $orderBy = 'desc';
         $q = null;
 
@@ -71,8 +71,8 @@ class RoomController extends Controller
 
         // Create Room
         $room = new Room;
-        $room->room_number = $request->input('room_number');
-        $room->room_type = $request->input('room_type');
+        $room->room_name = $request->input('room_name');
+        // $room->room_type = $request->input('room_type');
         $room->max_occupancy = $request->input('max_occupancy');
         $room->beds = $request->input('beds');
         $room->area = $request->input('area');

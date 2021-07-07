@@ -136,7 +136,6 @@
                 <div class="container">
                     <div class="text text-center">
                         <h2>ABOUT WAGYINGO HOSTEL</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing</p>
                     </div>
                 </div>
 
@@ -155,32 +154,20 @@
                     <div class="about-item">
 
                         <div class="img owl-single">
-                            <img src="images/about/img-1.jpg" alt="">
-                            <img src="images/about/img-1.jpg" alt="">
+                            <img src="images/rooms/about1.jpg" alt="">
+                            <img src="images/rooms/about2.jpg" alt="">
                         </div>
 
                         <div class="text">
-                            <h2 class="heading">ABOUT lotus</h2>
+                            <h2 class="heading">ABOUT Wagyingo Hostel</h2>
                             <div class="desc">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <b>The point of using Lorem Ipsum is that it has a more-or-less normal</b> distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing<br> packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p><br>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- END / ITEM -->
-
-                    <!-- ITEM -->
-                    <div class="about-item about-right">
-
-                        <div class="img">
-                            <img src="images/about/img-1.jpg" alt="">
-                        </div>
-
-                        <div class="text">
-                            <h2 class="heading">WHY GUEST CHOOSE lotus HOTEL?</h2>
-                            <div class="desc">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, <b>sometimes by accident, sometimes on purpose</b> (injected humour and the like).</p>
+                                <p>
+                                    Wagyingo Hostel stands out with its unique facilities and services.
+                                    Strong security with CCTV cameras at vantage points. We provide 
+                                    comfortable study rooms. A TV (with DSTV subscription) and a refrigerator
+                                    are provided in the room. Free WiFi for residents as well. 
+                                </p><br>
+                                <p>It's just a few minutes walk from the colleges.</p>
                             </div>
                         </div>
 
@@ -192,173 +179,6 @@
             </div>
         </section>
         <!-- END / ABOUT -->
-        
-        <!-- HOTEL STATISTICS -->
-        <section class="section-statistics bg-10">
-            
-            <div class="awe-overlay"></div>
-
-            <div class="container">
-                <div class="statistics">
-                
-                    <h2 class="heading white text-center">HoStel statistics</h2>
-                
-                    <div class="statistics_content">
-                        <div class="row">
-                
-                            <!-- ITEM -->
-                            <div class="col-xs-6 col-md-3">
-                                <div class="statistics_item">
-                                    <span class="count">768</span>
-                                    <span>Guest Stay</span>
-                                </div>
-                            </div>
-                            <!-- END ITEM -->
-                
-                            <!-- ITEM -->
-                            <div class="col-xs-6 col-md-3">
-                                <div class="statistics_item">
-                                    <span class="count">632</span>
-                                    <span>BOOK ROOM</span>
-                                </div>
-                            </div>
-                            <!-- END ITEM -->
-                
-                            <!-- ITEM -->
-                            <div class="col-xs-6 col-md-3">
-                                <div class="statistics_item">
-                                    <span class="count">1024</span>
-                                    <span>MEMBER STAY</span>
-                                </div>
-                            </div>
-                            <!-- END ITEM -->
-                
-                            <!-- ITEM -->
-                            <div class="col-xs-6 col-md-3">
-                                <div class="statistics_item">
-                                    <span class="count">256</span>
-                                    <span>MEALS SERVED</span>
-                                </div>
-                            </div>
-                            <!-- END ITEM -->
-                
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END / HOTEL STATISTICS -->
-
-        <!-- TEAM -->
-        <section class="section-team">
-            <div class="container">
-
-                <div class="team">
-                    <h2 class="heading text-center">Team Member</h2>
-                    <p class="sub-heading text-center">Lorem Ipsum is simply dummy text of the printing</p>
-                    
-                    <div class="team_content">
-                        <div class="row">
-
-                            <!-- ITEM -->
-                            <div class="col-xs-6 col-md-3">
-                                <div class="team_item text-center">
-
-                                    <div class="img">
-                                        <a href=""><img src="images/team/img-1.jpg" alt=""></a>
-                                    </div> 
-
-                                    <div class="text">
-                                        <h2>JESSICA ALBA</h2>
-                                        <span>Hostel Owner</span>
-                                        <p>Mea omnium explicari te, eu sit vidit harum fabellas, his no legere feugaitper in laudem malorum epicuri, quod natum evertitur ne per.</p>
-                                        <div class="team-share">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- END / ITEM -->
-
-                            <!-- ITEM -->
-                            <div class="col-xs-6 col-md-3">
-                                <div class="team_item text-center">
-
-                                    <div class="img">
-                                        <a href=""><img src="images/team/img-1.jpg" alt=""></a>
-                                    </div> 
-
-                                    <div class="text">
-                                        <h2>Robet WILIAM</h2>
-                                        <span>Hostel Manager</span>
-                                        <p>Mea omnium explicari te, eu sit vidit harum fabellas, his no legere feugaitper in laudem malorum epicuri, quod natum evertitur ne per.</p>
-                                        <div class="team-share">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- END / ITEM -->
-
-                            <!-- ITEM -->
-                            <div class="col-xs-6 col-md-3">
-                                <div class="team_item text-center">
-
-                                    <div class="img">
-                                        <a href=""><img src="images/team/img-1.jpg" alt=""></a>
-                                    </div> 
-
-                                    <div class="text">
-                                        <h2>Adam</h2>
-                                        <span>Hostel Porter</span>
-                                        <p>Mea omnium explicari te, eu sit vidit harum fabellas, his no legere feugaitper in laudem malorum epicuri, quod natum evertitur ne per.</p>
-                                        <div class="team-share">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- END / ITEM -->
-
-                            <!-- ITEM -->
-                            <div class="col-xs-6 col-md-3">
-                                <div class="team_item text-center">
-
-                                    <div class="img">
-                                        <a href=""><img src="images/team/img-1.jpg" alt=""></a>
-                                    </div> 
-
-                                    <div class="text">
-                                        <h2>David Gari</h2>
-                                        <span>Hostel Accountant</span>
-                                        <p>Mea omnium explicari te, eu sit vidit harum fabellas, his no legere feugaitper in laudem malorum epicuri, quod natum evertitur ne per.</p>
-                                        <div class="team-share">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- END / ITEM -->
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- END / TEAM -->
 
         <!-- FOOTER -->
         <footer id="footer">
@@ -393,12 +213,13 @@
                             <div class="widget widget_logo">
                                 <div class="widget-logo">
                                     <div class="img">
-                                        <a href="#"><img src="images/logo-footer.png" alt=""></a>
+                                        <a href="#"><img src="images/wagyingo_logo.png" alt=""></a>
                                     </div>
                                     <div class="text">
-                                        <p><i class="lotus-icon-location"></i> 225 Beach Street, Australian</p>
-                                        <p><i class="lotus-icon-phone"></i> 1-548-854-8898</p>
-                                        <p><i class="fa fa-envelope-o"></i> <a href="mailto:hello@thelotushotel.com">hello@thelotushotel.com</a></p>
+                                        <p><i class="lotus-icon-location mr10"></i>DX 32 KINGDOM ST, GHANA</p>
+                                        <p><i class="lotus-icon-phone mr10"></i> 233 20 365 2247</p>
+                                        <p><i class="fa fa-envelope-o mr10"></i> <a href="mailto:students.wagyingo@gmail.com">students.wagyingo@gmail.com</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -406,22 +227,10 @@
 
                         <div class="col-xs-4 col-lg-2">
                             <div class="widget">
-                                <h4 class="widget-title">Page site</h4>
-                                <ul>
-                                    <li><a href="#">Guest Book</a></li>
-                                    <li><a href="#">Gallery</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Event</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-lg-2">
-                            <div class="widget">
                                 <h4 class="widget-title">ABOUT</h4>
                                 <ul>
-                                    <li><a href="">About</a></li>
-                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>

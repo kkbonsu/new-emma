@@ -2,8 +2,8 @@
     <div class="navbar-wrapper">
         <div class="navbar-content scroll-div">
             <ul class="nav pcoded-inner-navbar">
-                <li class="nav-item"><a href="/home" class="nav-link"><span class="pcoded-micon"><i class="fas fa-vr-cardboard"></i></span><span class="pcoded-mtext">Mini-Dashboard</span></a></li>
-                @can('admin')
+                <li class="nav-item"><a href="/home" class="nav-link"><span class="pcoded-micon"><i class="fas fa-vr-cardboard"></i></span><span class="pcoded-mtext">Booking Details</span></a></li>
+                {{-- @can('admin') --}}
                 <li class="nav-item pcoded-menu-caption">
                     <label>Admin</label>
                 </li>
@@ -15,8 +15,8 @@
                         <li><a href="/details">User Details</a></li>
                     </ul>
                 </li>
-                @endcan
-                @can('admin')
+                {{-- @endcan
+                @can('admin') --}}
                 <li class="nav-item pcoded-menu-caption">
                     <label>Rooms Configuration</label>
                 </li>
@@ -28,8 +28,8 @@
                         <li><a href="/rooms">Rooms</a></li>
                     </ul>
                 </li>
-                @endcan
-                @can('admin')
+                {{-- @endcan
+                @can('admin') --}}
                 <li class="nav-item pcoded-menu-caption">
                     <label>Room Bookings</label>
                 </li>
@@ -42,7 +42,7 @@
                         <li><a href="/transfers">Room Transfers</a></li>
                     </ul>
                 </li>
-                @endcan
+                {{-- @endcan --}}
             </ul>
         </div>
     </div>
