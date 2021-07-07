@@ -54,8 +54,8 @@
             <div class="header_top">
                 <div class="container">
                     <div class="header_left float-left">
-                        <span><i class="lotus-icon-location"></i> 225 Beach Street, Australian</span>
-                        <span><i class="lotus-icon-phone"></i> 1-548-854-8898</span>
+                        <span><i class="lotus-icon-location"></i> DX 32 KINGDOM ST, GHANA</span>
+                        <span><i class="lotus-icon-phone"></i> +233 203652247</span>
                     </div>
                     <div class="header_right float-right">
                         <span class="socials">
@@ -228,7 +228,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-xs-4 col-lg-2">
                             <div class="widget">
                                 <h4 class="widget-title">ABOUT</h4>
