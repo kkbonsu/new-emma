@@ -33,7 +33,7 @@ class PDFSlipController extends Controller
             <img width="700px" height="100px" src="images/wag1.png" />
             <p style="text-align: center">KNUST Ayeduase</p>
             <p style="text-align: center">0203541258 / 0214587523</p>
-            <p style="text-align: center">enquiries@wagyingohostel.com</p>
+            <p style="text-align: center">students.wagyingo@gmail.com</p>
             <hr>
             <div class="col">
             <p>Date: '.Carbon::today()->toDateString().'</p>
