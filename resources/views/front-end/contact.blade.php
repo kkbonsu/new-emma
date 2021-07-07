@@ -152,6 +152,12 @@
         <section class="section-contact">
             <div class="container">
                 <div class="contact">
+                    @section('content')
+                    @if ($message = Session::get('success'))
+                    <div class="alert alert-success">
+                        <p>{{ $message }}</p>
+                    </div>
+                    @endif
                     <div class="row">
 
                         <div class="col-md-6 col-lg-5">
@@ -169,7 +175,8 @@
 
                         <div class="col-md-6 col-lg-6 col-lg-offset-1">
                             <div class="contact-form">
-                                <form id="send-contact-form" action="send_mail_contact.php" method="post"> 
+                                {!! Form::open(array('route' => 'contacts.store', 'method'=>'POST')) !!}
+                                    @csrf
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <input type="text" class="field-text"  name="name" placeholder="Name">
@@ -181,14 +188,14 @@
                                             <input type="text" class="field-text" name="subject" placeholder="Subject">
                                         </div>
                                         <div class="col-sm-12">
-                                            <textarea cols="30" rows="10" name="message"  class="field-textarea" placeholder="Write what do you want"></textarea>
+                                            <textarea cols="30" rows="10" name="message"  class="field-textarea" placeholder="Message"></textarea>
                                         </div>
                                         <div class="col-sm-6">
                                             <button type="submit" class="awe-btn awe-btn-13">SEND</button>
                                         </div>
                                     </div>
                                     <div id="contact-content"></div>
-                                </form>
+                                    {!! Form::close() !!}
                             </div>
                         </div>
 

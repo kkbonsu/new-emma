@@ -38,6 +38,7 @@ Route::resource('amenities', App\Http\Controllers\AmenityController::class);
 Route::resource('reservations', App\Http\Controllers\ReservationController::class);
 Route::resource('transfers', App\Http\Controllers\TransferController::class);
 Route::resource('details', App\Http\Controllers\DetailController::class); 
+Route::resource('contacts', App\Http\Controllers\ContactController::class);
 Route::resource('students', App\Http\Controllers\StudentController::class);
 Route::get('/findroom', [App\Http\Controllers\FindRoomController::class, 'index'])->name('findroom');
 Route::post('/findrooms', [App\Http\Controllers\FindRoomController::class, 'findroom'])->name('findrooms');
