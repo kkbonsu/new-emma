@@ -17,10 +17,10 @@
 </div>
 @endif
 <div class="card">
-    @if (count($booking) > 0)
+    {{-- @if (count($booking) > 0) --}}
     <div class="card-body">
-        <p>Booking Date: {{ $booking['booking_date'] }}</p>
-        <p>Your Name: {{ $booking['username'] }}</p>
+        <p>Booking Date: {{ $booking->booking_date}}</p>
+        <p>Your Name: {{ $booking->username }}</p>
         <p>Room Booked: {{ $booking['room_name'] }}</p>
         <p>Nationality: {{ $booking['nationality'] }}</p>
         <p>Programme of Study: {{ $booking['programme'] }}</p>
@@ -39,7 +39,7 @@
         <a class="btn btn-lg btn-info" href="https://ravesandbox.flutterwave.com/pay/df8dqks1zuao" target="_blank">Payment Link</a>
         @endif
     </div>
-    @endif
+    {{-- @endif --}}
 
 </div>
 

@@ -15,7 +15,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $booking = Booking::where('user_id', Auth::id())->get();
+        $booking = Booking::where('username', Auth::user()->name)->first();
 
         return view('student.index')->with([
             'booking' => $booking

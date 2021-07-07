@@ -156,20 +156,20 @@
                     @foreach ($rooms as $room)
                         <!-- ITEM -->
                         <div class="col-xs-3">
-                            <div class="room_item-5" data-background=''>
+                            <div class="room_item-5" data-background='images/rooms/hallway.jpg'>
 
                                 <div class="img">
-                                    {{-- <a href="#"><img src="images/room/grid2/img-1.jpg" alt=""></a> --}}
+                                    <a href="#"><img src="images/room/grid2/img-1.jpg" alt=""></a>
                                 </div>
 
                                 <div class="room_item-forward">
-                                    <h2><a href="{{ route('book', $room->id) }}">{{ $room->room_name }}</a></h2>
-                                    <span class="price">GH&#8373;{{ $room->price }}</span>
+                                    <h2><a style="color: #000" href="{{ route('book', $room->id) }}">{{ $room->room_name }}</a></h2>
+                                    <span class="price" style="color: #ff0000"><b>GH&#8373;{{ $room->price }}</b></span>
                                 </div>
 
                                 <div class="room_item-back">
-                                    <h3><a href="{{ route('book', $room->id) }}">{{ $room->room_name }}</a></h3>
-                                    <span class="price">GH&#8373;{{ $room->price }}</span>
+                                    <h3><a style="color: #000" href="{{ route('book', $room->id) }}">{{ $room->room_name }}</a></h3>
+                                    <span class="price" style="color: #ff0000"><b>GH&#8373;{{ $room->price }}</b></span>
                                 </div>
 
                             </div>
