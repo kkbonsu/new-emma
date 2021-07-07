@@ -18,7 +18,7 @@ class PDFSlipController extends Controller
     {
         $pdf = \App::make('dompdf.wrapper');
         $pdf->loadHTML($this->convert_booking_data_to_html($id));
-        return $pdf->stream();
+        return $pdf->download();
     }
 
     function convert_booking_data_to_html($id)
